@@ -1,0 +1,1586 @@
+---
+// Configuration de la page tarifs
+const title = 'Tarifs - Game Street';
+const description = 'Découvrez nos tarifs attractifs pour la Semaine de la Diversité !';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="nav">
+			<div class="nav-container">
+				<a href="/" class="logo">
+					<span class="logo-icon">🎮</span>
+					<span class="logo-text">GAME STREET</span>
+				</a>
+				<ul class="nav-links">
+					<li><a href="/">Accueil</a></li>
+					<li><a href="/games">Jeux</a></li>
+					<li><a href="/tarifs" class="active">Tarifs</a></li>
+					<li><a href="/#events">Activités</a></li>
+					<li><a href="/#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="pricing-hero">
+			<div class="hero-bg">
+				<div class="animated-grid"></div>
+				<div class="particles"></div>
+			</div>
+
+			<div class="hero-content">
+				<h1 class="page-title">
+					<span class="title-3d">NOS TARIFS</span>
+				</h1>
+				<p class="page-subtitle">
+					Des prix attractifs pour tous les gamers pendant la Semaine de la Diversité
+				</p>
+				<div class="hero-badge">
+					<span class="badge-icon">🎉</span>
+					<span class="badge-text">Offres Spéciales Événement</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Session Gaming -->
+		<section class="pricing-section">
+			<div class="container">
+				<h2 class="section-title">
+					<span class="title-glow">Sessions de Jeu</span>
+				</h2>
+				<p class="section-subtitle">Jouez sur PS5, PS4, PC Gaming 2K ou Laptops</p>
+
+				<div class="pricing-grid">
+					<!-- Solo Session -->
+					<div class="pricing-card featured">
+						<div class="card-badge">⭐ SOLO</div>
+						<div class="card-icon">🎮</div>
+						<h3 class="card-title">Session Solo</h3>
+						<div class="card-price">
+							<span class="price-amount">500</span>
+							<span class="price-currency">FRS</span>
+						</div>
+						<div class="card-subtitle">Jeux au tour par tour</div>
+						<ul class="card-features">
+							<li>✅ <strong>3 tours</strong> de jeu</li>
+							<li>✅ Accès à tous les jeux</li>
+							<li>✅ PS5, PS4, PC ou Laptop</li>
+							<li>✅ Écrans 2K disponibles</li>
+							<li>✅ Manettes et périphériques fournis</li>
+						</ul>
+						<button class="btn-pricing">Réserver →</button>
+					</div>
+
+					<!-- Duo Session -->
+					<div class="pricing-card popular">
+						<div class="card-ribbon">POPULAIRE</div>
+						<div class="card-icon">👥</div>
+						<h3 class="card-title">Session Duo</h3>
+						<div class="card-price">
+							<span class="price-amount">500</span>
+							<span class="price-currency">FRS</span>
+							<span class="price-per">/ 2 personnes</span>
+						</div>
+						<div class="card-subtitle">Jeux au tour par tour</div>
+						<ul class="card-features">
+							<li>✅ <strong>2 tours</strong> par personne</li>
+							<li>✅ Jouez avec un ami</li>
+							<li>✅ Jeux multijoueurs</li>
+							<li>✅ Écrans côte à côte</li>
+							<li>✅ Économisez en jouant à deux</li>
+						</ul>
+						<button class="btn-pricing primary">Réserver →</button>
+					</div>
+
+					<!-- VR Experience -->
+					<div class="pricing-card vr">
+						<div class="card-badge">🥽 VR</div>
+						<div class="card-icon">🌟</div>
+						<h3 class="card-title">Expérience VR</h3>
+						<div class="card-price">
+							<span class="price-amount">500</span>
+							<span class="price-currency">FRS</span>
+						</div>
+						<div class="card-subtitle">10 minutes d'immersion</div>
+						<ul class="card-features">
+							<li>✅ <strong>10 minutes</strong> de VR</li>
+							<li>✅ Beat Saber, RE Village, Half-Life</li>
+							<li>✅ Casque VR dernière génération</li>
+							<li>✅ Assistance pour débutants</li>
+							<li>✅ Expérience immersive totale</li>
+						</ul>
+						<button class="btn-pricing">Essayer VR →</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pass & Bundles -->
+		<section class="bundles-section">
+			<div class="container">
+				<h2 class="section-title">
+					<span class="title-glow">Forfaits & Pass</span>
+				</h2>
+				<p class="section-subtitle">Économisez avec nos packs avantageux</p>
+
+				<div class="bundles-grid">
+					<!-- Pass Journée -->
+					<div class="bundle-card">
+						<div class="bundle-header">
+							<span class="bundle-icon">☀️</span>
+							<h3>Pass Journée</h3>
+						</div>
+						<div class="bundle-price">
+							<span class="original-price">2500 FRS</span>
+							<span class="discounted-price">2000 FRS</span>
+							<span class="discount-badge">-20%</span>
+						</div>
+						<p class="bundle-description">Jouez toute la journée sans limite</p>
+						<ul class="bundle-features">
+							<li>🎮 Accès illimité pendant 1 journée</li>
+							<li>🕐 De 9h à 18h</li>
+							<li>🎯 Tous les jeux et plateformes</li>
+							<li>🥤 1 boisson offerte</li>
+						</ul>
+					</div>
+
+					<!-- Pack 5 Sessions -->
+					<div class="bundle-card popular">
+						<div class="bundle-ribbon">MEILLEURE VALEUR</div>
+						<div class="bundle-header">
+							<span class="bundle-icon">🎫</span>
+							<h3>Pack 5 Sessions</h3>
+						</div>
+						<div class="bundle-price">
+							<span class="original-price">2500 FRS</span>
+							<span class="discounted-price">2200 FRS</span>
+							<span class="discount-badge">-12%</span>
+						</div>
+						<p class="bundle-description">5 sessions solo à utiliser pendant l'événement</p>
+						<ul class="bundle-features">
+							<li>🎮 5 sessions de 3 tours</li>
+							<li>📅 Valable toute la semaine</li>
+							<li>👥 Transférable à un ami</li>
+							<li>⭐ Priorité d'accès</li>
+						</ul>
+					</div>
+
+					<!-- Pack Groupe -->
+					<div class="bundle-card">
+						<div class="bundle-header">
+							<span class="bundle-icon">👨‍👩‍👧‍👦</span>
+							<h3>Pack Groupe</h3>
+						</div>
+						<div class="bundle-price">
+							<span class="original-price">3000 FRS</span>
+							<span class="discounted-price">2500 FRS</span>
+							<span class="discount-badge">-17%</span>
+						</div>
+						<p class="bundle-description">Pour un groupe de 4-6 personnes</p>
+						<ul class="bundle-features">
+							<li>👥 6 sessions au total</li>
+							<li>🎯 Jeux multijoueurs privilégiés</li>
+							<li>🏆 Mini-tournoi privé possible</li>
+							<li>📸 Photos de groupe offertes</li>
+						</ul>
+					</div>
+
+					<!-- Pass Semaine VIP -->
+					<div class="bundle-card vip">
+						<div class="bundle-header">
+							<span class="bundle-icon">👑</span>
+							<h3>Pass Semaine VIP</h3>
+						</div>
+						<div class="bundle-price">
+							<span class="original-price">5000 FRS</span>
+							<span class="discounted-price">4000 FRS</span>
+							<span class="discount-badge">-20%</span>
+						</div>
+						<p class="bundle-description">Accès illimité toute la semaine + avantages exclusifs</p>
+						<ul class="bundle-features">
+							<li>♾️ Accès illimité 7 jours</li>
+							<li>🎮 Tous jeux & VR inclus</li>
+							<li>⚡ Accès prioritaire garanti</li>
+							<li>🏆 Entrée tournoi gratuite</li>
+							<li>🎁 Goodies exclusifs</li>
+							<li>🥤 Boissons illimitées</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tournament Section -->
+		<section class="tournament-section">
+			<div class="container">
+				<div class="tournament-hero">
+					<div class="tournament-icon-large">🏆</div>
+					<h2 class="tournament-title">TOURNOIS COMPÉTITIFS</h2>
+					<p class="tournament-subtitle">
+						Affrontez les meilleurs et gagnez des prix incroyables !
+					</p>
+				</div>
+
+				<div class="tournament-grid">
+					<!-- Tournament Info Card -->
+					<div class="tournament-card main">
+						<div class="tournament-header">
+							<h3>🎯 Inscription Tournoi</h3>
+							<div class="tournament-price">
+								<span class="price-large">1000</span>
+								<span class="price-currency-large">FRS</span>
+							</div>
+						</div>
+
+						<div class="tournament-details">
+							<div class="detail-item">
+								<span class="detail-icon">👥</span>
+								<div>
+									<strong>8 Places disponibles</strong>
+									<p>Premier arrivé, premier servi</p>
+								</div>
+							</div>
+
+							<div class="detail-item">
+								<span class="detail-icon">🎮</span>
+								<div>
+									<strong>Multi-jeux</strong>
+									<p>FIFA, Street Fighter, Tekken, Naruto</p>
+								</div>
+							</div>
+
+							<div class="detail-item">
+								<span class="detail-icon">⏱️</span>
+								<div>
+									<strong>Format</strong>
+									<p>Élimination directe - Best of 3</p>
+								</div>
+							</div>
+
+							<div class="detail-item">
+								<span class="detail-icon">📅</span>
+								<div>
+									<strong>Dates</strong>
+									<p>Tournois quotidiens pendant la semaine</p>
+								</div>
+							</div>
+						</div>
+
+						<button class="btn-tournament">S'inscrire au Tournoi →</button>
+					</div>
+
+					<!-- Prize Pool Card -->
+					<div class="prize-card">
+						<div class="prize-header">
+							<h3>💰 Prize Pool</h3>
+							<div class="total-prize">8000 FRS</div>
+						</div>
+
+						<div class="prize-list">
+							<div class="prize-item first">
+								<div class="prize-rank">
+									<span class="medal">🥇</span>
+									<span class="rank-text">1er Place</span>
+								</div>
+								<div class="prize-amount">
+									<span class="amount">5000</span>
+									<span class="currency">FRS</span>
+								</div>
+								<div class="prize-extra">+ Trophée + Goodies</div>
+							</div>
+
+							<div class="prize-item second">
+								<div class="prize-rank">
+									<span class="medal">🥈</span>
+									<span class="rank-text">2ème Place</span>
+								</div>
+								<div class="prize-amount">
+									<span class="amount">2000</span>
+									<span class="currency">FRS</span>
+								</div>
+								<div class="prize-extra">+ Médaille</div>
+							</div>
+
+							<div class="prize-item third">
+								<div class="prize-rank">
+									<span class="medal">🥉</span>
+									<span class="rank-text">3ème Place</span>
+								</div>
+								<div class="prize-amount">
+									<span class="amount">1000</span>
+									<span class="currency">FRS</span>
+								</div>
+								<div class="prize-extra">+ Certificat</div>
+							</div>
+
+							<div class="prize-item participation">
+								<div class="prize-rank">
+									<span class="medal">🎖️</span>
+									<span class="rank-text">Tous les participants</span>
+								</div>
+								<div class="prize-extra">Badge exclusif + Réductions</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tournament Schedule -->
+				<div class="tournament-schedule">
+					<h3>📅 Planning des Tournois</h3>
+					<div class="schedule-grid">
+						<div class="schedule-item">
+							<div class="day">Lundi</div>
+							<div class="game">FIFA 24</div>
+							<div class="time">16h00</div>
+						</div>
+						<div class="schedule-item">
+							<div class="day">Mardi</div>
+							<div class="game">Street Fighter 6</div>
+							<div class="time">16h00</div>
+						</div>
+						<div class="schedule-item">
+							<div class="day">Mercredi</div>
+							<div class="game">Tekken 8</div>
+							<div class="time">16h00</div>
+						</div>
+						<div class="schedule-item">
+							<div class="day">Jeudi</div>
+							<div class="game">Naruto Storm</div>
+							<div class="time">16h00</div>
+						</div>
+						<div class="schedule-item">
+							<div class="day">Vendredi</div>
+							<div class="game">Mortal Kombat</div>
+							<div class="time">16h00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Special Offers -->
+		<section class="offers-section">
+			<div class="container">
+				<h2 class="section-title">
+					<span class="title-glow">Offres Spéciales</span>
+				</h2>
+
+				<div class="offers-grid">
+					<!-- Early Bird -->
+					<div class="offer-card">
+						<div class="offer-badge hot">🔥 HOT</div>
+						<h3>🌅 Early Bird</h3>
+						<p class="offer-desc">
+							Arrivez avant 12h et profitez de <strong>-30% sur toutes les sessions</strong>
+						</p>
+						<div class="offer-example">
+							Session Solo : <s>500 FRS</s> → <strong>350 FRS</strong>
+						</div>
+					</div>
+
+					<!-- Student Discount -->
+					<div class="offer-card">
+						<div class="offer-badge">🎓 ÉTUDIANT</div>
+						<h3>📚 Tarif Étudiant</h3>
+						<p class="offer-desc">
+							<strong>-15% avec carte étudiante</strong> valide sur toutes nos offres
+						</p>
+						<div class="offer-example">Cumulable avec d'autres réductions</div>
+					</div>
+
+					<!-- Happy Hour -->
+					<div class="offer-card">
+						<div class="offer-badge">⏰ HAPPY HOUR</div>
+						<h3>🎉 Happy Hour VR</h3>
+						<p class="offer-desc">
+							Sessions VR <strong>15 minutes pour le prix de 10</strong> entre 14h-16h
+						</p>
+						<div class="offer-example">
+							VR : 500 FRS → <strong>15 min au lieu de 10</strong>
+						</div>
+					</div>
+
+					<!-- Referral -->
+					<div class="offer-card">
+						<div class="offer-badge">💝 BONUS</div>
+						<h3>👥 Parrainage</h3>
+						<p class="offer-desc">
+							Amenez un ami et <strong>gagnez tous les deux 1 session gratuite</strong>
+						</p>
+						<div class="offer-example">Illimité - Plus vous parrainez, plus vous gagnez</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="faq-section">
+			<div class="container">
+				<h2 class="section-title">
+					<span class="title-glow">Questions Fréquentes</span>
+				</h2>
+
+				<div class="faq-grid">
+					<div class="faq-item">
+						<h3>💳 Quels moyens de paiement acceptez-vous ?</h3>
+						<p>Espèces, Mobile Money, Orange Money, et cartes bancaires.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>🎮 C'est quoi un "tour" de jeu ?</h3>
+						<p>
+							Un tour = une partie complète d'un jeu (match FIFA, combat Street Fighter, course Gran
+							Turismo, etc.)
+						</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>👶 Y a-t-il un âge minimum ?</h3>
+						<p>
+							Tous les âges sont bienvenus ! Les mineurs de moins de 13 ans doivent être
+							accompagnés.
+						</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>📅 Faut-il réserver à l'avance ?</h3>
+						<p>
+							Pas obligatoire mais recommandé pour garantir votre place, surtout pour les tournois.
+						</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>🏆 Comment s'inscrire aux tournois ?</h3>
+						<p>Sur place ou via notre contact. Places limitées à 8 joueurs par tournoi.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>🥽 Puis-je essayer la VR si c'est ma première fois ?</h3>
+						<p>
+							Absolument ! Notre équipe vous accompagne et vous explique tout. Parfait pour débuter
+							!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="cta-section">
+			<div class="container">
+				<div class="cta-card">
+					<h2>🎮 Prêt à Jouer ?</h2>
+					<p>
+						Venez nous rendre visite pendant la Semaine de la Diversité et profitez de nos tarifs
+						exceptionnels !
+					</p>
+					<div class="cta-buttons">
+						<a href="/" class="btn-cta primary">Retour à l'accueil</a>
+						<a href="/games" class="btn-cta">Voir les jeux</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-bottom">
+					<p>&copy; 2025 Game Street - Semaine de la Diversité</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			/* ============================================
+			   VARIABLES & RESET
+			   ============================================ */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--primary: #00f0ff;
+				--secondary: #ff00ff;
+				--accent: #ffff00;
+				--success: #00ff88;
+				--dark: #0a0a0f;
+				--dark-2: #1a1a2e;
+				--light: #ffffff;
+				--gray: #8892b0;
+				--gradient-neon: linear-gradient(135deg, var(--primary), var(--secondary));
+				--gradient-gaming: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+				--gradient-gold: linear-gradient(135deg, #ffd700, #ffed4e);
+				--font-primary: 'Orbitron', sans-serif;
+				--font-secondary: 'Exo 2', sans-serif;
+				--spacing-sm: 1rem;
+				--spacing-md: 2rem;
+				--spacing-lg: 4rem;
+				--shadow-lg: 0 20px 60px rgba(0, 240, 255, 0.3);
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				font-family: var(--font-secondary);
+				background-color: var(--dark);
+				color: var(--light);
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+
+			.container {
+				max-width: 1400px;
+				margin: 0 auto;
+				padding: 0 var(--spacing-md);
+			}
+
+			/* ============================================
+			   NAVIGATION
+			   ============================================ */
+			.nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 1000;
+				background: rgba(10, 10, 15, 0.95);
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+			}
+
+			.nav-container {
+				max-width: 1400px;
+				margin: 0 auto;
+				padding: 1rem 2rem;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-family: var(--font-primary);
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--primary);
+				text-shadow: 0 0 20px var(--primary);
+				text-decoration: none;
+				transition: transform 0.3s ease;
+			}
+
+			.logo:hover {
+				transform: scale(1.05);
+			}
+
+			.logo-icon {
+				font-size: 2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+				list-style: none;
+			}
+
+			.nav-links a {
+				color: var(--gray);
+				text-decoration: none;
+				font-weight: 600;
+				transition: color 0.3s ease;
+			}
+
+			.nav-links a.active,
+			.nav-links a:hover {
+				color: var(--primary);
+			}
+
+			/* ============================================
+			   HERO SECTION
+			   ============================================ */
+			.pricing-hero {
+				position: relative;
+				min-height: 60vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-top: 80px;
+				overflow: hidden;
+			}
+
+			.hero-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			.animated-grid {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image:
+					linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+					linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+				background-size: 50px 50px;
+				animation: gridMove 20s linear infinite;
+				transform: perspective(500px) rotateX(60deg);
+			}
+
+			@keyframes gridMove {
+				0% {
+					background-position: 0 0;
+				}
+				100% {
+					background-position: 50px 50px;
+				}
+			}
+
+			.particles {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			.particles::before,
+			.particles::after {
+				content: '';
+				position: absolute;
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				filter: blur(100px);
+				opacity: 0.3;
+				animation: particleFloat 10s ease-in-out infinite;
+			}
+
+			.particles::before {
+				background: var(--primary);
+				top: 20%;
+				left: 10%;
+			}
+
+			.particles::after {
+				background: var(--secondary);
+				bottom: 20%;
+				right: 10%;
+				animation-delay: 5s;
+			}
+
+			@keyframes particleFloat {
+				0%,
+				100% {
+					transform: translate(0, 0);
+				}
+				50% {
+					transform: translate(50px, -50px);
+				}
+			}
+
+			.hero-content {
+				position: relative;
+				z-index: 10;
+				text-align: center;
+				padding: var(--spacing-md);
+			}
+
+			.page-title {
+				font-family: var(--font-primary);
+				font-size: clamp(3rem, 8vw, 6rem);
+				font-weight: 900;
+				margin-bottom: 1rem;
+			}
+
+			.title-3d {
+				display: inline-block;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				animation: title3DAnimation 5s ease-in-out infinite;
+				filter: drop-shadow(0 10px 20px rgba(0, 240, 255, 0.5));
+			}
+
+			@keyframes title3DAnimation {
+				0%,
+				100% {
+					transform: rotateY(0deg);
+				}
+				50% {
+					transform: rotateY(5deg);
+				}
+			}
+
+			.page-subtitle {
+				font-size: 1.3rem;
+				color: var(--gray);
+				margin-bottom: 2rem;
+			}
+
+			.hero-badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 1rem 2rem;
+				background: var(--gradient-gold);
+				border-radius: 50px;
+				font-weight: 700;
+				color: var(--dark);
+				animation: badgePulse 2s ease-in-out infinite;
+			}
+
+			@keyframes badgePulse {
+				0%,
+				100% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.05);
+				}
+			}
+
+			.badge-icon {
+				font-size: 1.5rem;
+			}
+
+			/* ============================================
+			   SECTION TITLES
+			   ============================================ */
+			.section-title {
+				text-align: center;
+				font-family: var(--font-primary);
+				font-size: clamp(2.5rem, 5vw, 4rem);
+				font-weight: 900;
+				margin-bottom: 1rem;
+			}
+
+			.title-glow {
+				display: inline-block;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.section-subtitle {
+				text-align: center;
+				font-size: 1.2rem;
+				color: var(--gray);
+				margin-bottom: var(--spacing-lg);
+			}
+
+			/* ============================================
+			   PRICING SECTION
+			   ============================================ */
+			.pricing-section {
+				padding: var(--spacing-lg) 0;
+			}
+
+			.pricing-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: var(--spacing-md);
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.pricing-card {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 30px;
+				padding: 2.5rem;
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				backdrop-filter: blur(10px);
+				position: relative;
+				transition: all 0.5s ease;
+				transform-style: preserve-3d;
+			}
+
+			.pricing-card:hover {
+				transform: translateY(-10px) rotateY(2deg);
+				border-color: var(--primary);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.pricing-card.popular {
+				border-color: var(--accent);
+				box-shadow: 0 0 40px rgba(255, 255, 0, 0.3);
+			}
+
+			.pricing-card.vr {
+				border-color: var(--secondary);
+			}
+
+			.card-badge {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				padding: 0.5rem 1rem;
+				background: var(--gradient-neon);
+				border-radius: 20px;
+				font-size: 0.85rem;
+				font-weight: 700;
+				color: var(--dark);
+			}
+
+			.card-ribbon {
+				position: absolute;
+				top: 30px;
+				right: -10px;
+				padding: 0.5rem 1.5rem;
+				background: var(--accent);
+				color: var(--dark);
+				font-weight: 900;
+				font-size: 0.85rem;
+				box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+				transform: rotate(5deg);
+			}
+
+			.card-icon {
+				font-size: 4rem;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+
+			.card-title {
+				font-family: var(--font-primary);
+				font-size: 2rem;
+				text-align: center;
+				margin-bottom: 1.5rem;
+				color: var(--primary);
+			}
+
+			.card-price {
+				text-align: center;
+				margin-bottom: 0.5rem;
+			}
+
+			.price-amount {
+				font-family: var(--font-primary);
+				font-size: 4rem;
+				font-weight: 900;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.price-currency {
+				font-size: 1.5rem;
+				color: var(--gray);
+				margin-left: 0.5rem;
+			}
+
+			.price-per {
+				display: block;
+				font-size: 0.9rem;
+				color: var(--gray);
+				margin-top: 0.5rem;
+			}
+
+			.card-subtitle {
+				text-align: center;
+				color: var(--gray);
+				font-size: 1.1rem;
+				margin-bottom: 2rem;
+			}
+
+			.card-features {
+				list-style: none;
+				margin-bottom: 2rem;
+			}
+
+			.card-features li {
+				padding: 0.8rem 0;
+				border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+				font-size: 1rem;
+			}
+
+			.card-features strong {
+				color: var(--primary);
+			}
+
+			.btn-pricing {
+				width: 100%;
+				padding: 1.2rem;
+				font-family: var(--font-primary);
+				font-size: 1.1rem;
+				font-weight: 700;
+				background: transparent;
+				border: 2px solid var(--primary);
+				color: var(--primary);
+				border-radius: 50px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+
+			.btn-pricing:hover {
+				background: var(--primary);
+				color: var(--dark);
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.5);
+			}
+
+			.btn-pricing.primary {
+				background: var(--gradient-neon);
+				color: var(--dark);
+				border: none;
+			}
+
+			/* ============================================
+			   BUNDLES SECTION
+			   ============================================ */
+			.bundles-section {
+				padding: var(--spacing-lg) 0;
+				background: rgba(26, 26, 46, 0.3);
+			}
+
+			.bundles-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: var(--spacing-md);
+			}
+
+			.bundle-card {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 25px;
+				padding: 2rem;
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				position: relative;
+				transition: all 0.3s ease;
+			}
+
+			.bundle-card:hover {
+				transform: translateY(-10px);
+				border-color: var(--primary);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.bundle-card.popular {
+				border-color: var(--accent);
+			}
+
+			.bundle-card.vip {
+				border-color: #ffd700;
+				background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(26, 26, 46, 0.8));
+			}
+
+			.bundle-ribbon {
+				position: absolute;
+				top: 20px;
+				right: -5px;
+				padding: 0.4rem 1rem;
+				background: var(--accent);
+				color: var(--dark);
+				font-weight: 900;
+				font-size: 0.75rem;
+				box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+			}
+
+			.bundle-header {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.bundle-icon {
+				font-size: 3rem;
+			}
+
+			.bundle-header h3 {
+				font-family: var(--font-primary);
+				font-size: 1.5rem;
+				color: var(--primary);
+			}
+
+			.bundle-price {
+				text-align: center;
+				margin-bottom: 1rem;
+				position: relative;
+			}
+
+			.original-price {
+				font-size: 1.2rem;
+				color: var(--gray);
+				text-decoration: line-through;
+				display: block;
+			}
+
+			.discounted-price {
+				font-family: var(--font-primary);
+				font-size: 2.5rem;
+				font-weight: 900;
+				color: var(--success);
+				display: block;
+			}
+
+			.discount-badge {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0.3rem 0.8rem;
+				background: #ff0066;
+				color: white;
+				border-radius: 15px;
+				font-size: 0.9rem;
+				font-weight: 700;
+			}
+
+			.bundle-description {
+				text-align: center;
+				color: var(--gray);
+				margin-bottom: 1.5rem;
+			}
+
+			.bundle-features {
+				list-style: none;
+			}
+
+			.bundle-features li {
+				padding: 0.8rem 0;
+				border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+			}
+
+			/* ============================================
+			   TOURNAMENT SECTION
+			   ============================================ */
+			.tournament-section {
+				padding: var(--spacing-lg) 0;
+				background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(26, 26, 46, 0.5));
+			}
+
+			.tournament-hero {
+				text-align: center;
+				margin-bottom: var(--spacing-lg);
+			}
+
+			.tournament-icon-large {
+				font-size: 6rem;
+				margin-bottom: 1rem;
+				animation: float 3s ease-in-out infinite;
+			}
+
+			@keyframes float {
+				0%,
+				100% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-20px);
+				}
+			}
+
+			.tournament-title {
+				font-family: var(--font-primary);
+				font-size: clamp(2.5rem, 6vw, 5rem);
+				font-weight: 900;
+				background: var(--gradient-gold);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-bottom: 1rem;
+			}
+
+			.tournament-subtitle {
+				font-size: 1.3rem;
+				color: var(--gray);
+			}
+
+			.tournament-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+				gap: var(--spacing-md);
+				margin-bottom: var(--spacing-lg);
+			}
+
+			.tournament-card {
+				background: rgba(26, 26, 46, 0.9);
+				border-radius: 30px;
+				padding: 2.5rem;
+				border: 3px solid #ffd700;
+				box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+			}
+
+			.tournament-header {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.tournament-header h3 {
+				font-family: var(--font-primary);
+				font-size: 2rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.tournament-price {
+				display: flex;
+				align-items: baseline;
+				justify-content: center;
+				gap: 0.5rem;
+			}
+
+			.price-large {
+				font-family: var(--font-primary);
+				font-size: 5rem;
+				font-weight: 900;
+				background: var(--gradient-gold);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.price-currency-large {
+				font-size: 2rem;
+				color: var(--gray);
+			}
+
+			.tournament-details {
+				margin-bottom: 2rem;
+			}
+
+			.detail-item {
+				display: flex;
+				gap: 1rem;
+				padding: 1rem;
+				background: rgba(0, 240, 255, 0.05);
+				border-radius: 15px;
+				margin-bottom: 1rem;
+			}
+
+			.detail-icon {
+				font-size: 2rem;
+			}
+
+			.detail-item strong {
+				display: block;
+				color: var(--primary);
+				margin-bottom: 0.3rem;
+			}
+
+			.detail-item p {
+				color: var(--gray);
+				font-size: 0.95rem;
+			}
+
+			.btn-tournament {
+				width: 100%;
+				padding: 1.5rem;
+				font-family: var(--font-primary);
+				font-size: 1.3rem;
+				font-weight: 900;
+				background: var(--gradient-gold);
+				color: var(--dark);
+				border: none;
+				border-radius: 50px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+			}
+
+			.btn-tournament:hover {
+				transform: translateY(-5px) scale(1.02);
+				box-shadow: 0 20px 60px rgba(255, 215, 0, 0.5);
+			}
+
+			/* Prize Card */
+			.prize-card {
+				background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(26, 26, 46, 0.9));
+				border-radius: 30px;
+				padding: 2.5rem;
+				border: 3px solid #ffd700;
+			}
+
+			.prize-header {
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.prize-header h3 {
+				font-family: var(--font-primary);
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			.total-prize {
+				font-family: var(--font-primary);
+				font-size: 3rem;
+				font-weight: 900;
+				color: #ffd700;
+			}
+
+			.prize-list {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.prize-item {
+				background: rgba(0, 0, 0, 0.3);
+				border-radius: 20px;
+				padding: 1.5rem;
+				border: 2px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.prize-item.first {
+				border-color: #ffd700;
+				background: rgba(255, 215, 0, 0.1);
+			}
+
+			.prize-item.second {
+				border-color: #c0c0c0;
+			}
+
+			.prize-item.third {
+				border-color: #cd7f32;
+			}
+
+			.prize-rank {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			.medal {
+				font-size: 2.5rem;
+			}
+
+			.rank-text {
+				font-family: var(--font-primary);
+				font-size: 1.3rem;
+				font-weight: 700;
+			}
+
+			.prize-amount {
+				display: flex;
+				align-items: baseline;
+				gap: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.prize-amount .amount {
+				font-family: var(--font-primary);
+				font-size: 2.5rem;
+				font-weight: 900;
+				color: #ffd700;
+			}
+
+			.prize-amount .currency {
+				font-size: 1.2rem;
+				color: var(--gray);
+			}
+
+			.prize-extra {
+				color: var(--gray);
+				font-style: italic;
+			}
+
+			/* Tournament Schedule */
+			.tournament-schedule {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 25px;
+				padding: 2.5rem;
+				border: 2px solid rgba(0, 240, 255, 0.2);
+			}
+
+			.tournament-schedule h3 {
+				font-family: var(--font-primary);
+				font-size: 2rem;
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.schedule-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1rem;
+			}
+
+			.schedule-item {
+				background: rgba(0, 240, 255, 0.05);
+				border-radius: 15px;
+				padding: 1.5rem;
+				text-align: center;
+				border: 1px solid rgba(0, 240, 255, 0.2);
+				transition: all 0.3s ease;
+			}
+
+			.schedule-item:hover {
+				transform: translateY(-5px);
+				border-color: var(--primary);
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.2);
+			}
+
+			.schedule-item .day {
+				font-family: var(--font-primary);
+				font-size: 1.2rem;
+				color: var(--primary);
+				margin-bottom: 0.5rem;
+			}
+
+			.schedule-item .game {
+				font-size: 1.1rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+
+			.schedule-item .time {
+				color: var(--gray);
+				font-size: 0.95rem;
+			}
+
+			/* ============================================
+			   OFFERS SECTION
+			   ============================================ */
+			.offers-section {
+				padding: var(--spacing-lg) 0;
+			}
+
+			.offers-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: var(--spacing-md);
+			}
+
+			.offer-card {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 25px;
+				padding: 2rem;
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				position: relative;
+				transition: all 0.3s ease;
+			}
+
+			.offer-card:hover {
+				transform: translateY(-10px);
+				border-color: var(--primary);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.offer-badge {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				padding: 0.4rem 1rem;
+				background: var(--gradient-neon);
+				border-radius: 20px;
+				font-size: 0.8rem;
+				font-weight: 700;
+				color: var(--dark);
+			}
+
+			.offer-badge.hot {
+				background: linear-gradient(135deg, #ff6b6b, #ff4757);
+				animation: hotPulse 1.5s ease-in-out infinite;
+			}
+
+			@keyframes hotPulse {
+				0%,
+				100% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.1);
+				}
+			}
+
+			.offer-card h3 {
+				font-family: var(--font-primary);
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+				color: var(--primary);
+			}
+
+			.offer-desc {
+				color: var(--gray);
+				margin-bottom: 1rem;
+				line-height: 1.6;
+			}
+
+			.offer-desc strong {
+				color: var(--light);
+			}
+
+			.offer-example {
+				padding: 1rem;
+				background: rgba(0, 240, 255, 0.05);
+				border-radius: 10px;
+				border-left: 3px solid var(--primary);
+				font-size: 0.95rem;
+			}
+
+			.offer-example s {
+				color: var(--gray);
+			}
+
+			.offer-example strong {
+				color: var(--success);
+			}
+
+			/* ============================================
+			   FAQ SECTION
+			   ============================================ */
+			.faq-section {
+				padding: var(--spacing-lg) 0;
+				background: rgba(26, 26, 46, 0.3);
+			}
+
+			.faq-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+				gap: var(--spacing-md);
+			}
+
+			.faq-item {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 20px;
+				padding: 2rem;
+				border: 2px solid rgba(0, 240, 255, 0.1);
+				transition: all 0.3s ease;
+			}
+
+			.faq-item:hover {
+				border-color: var(--primary);
+				transform: translateY(-5px);
+			}
+
+			.faq-item h3 {
+				font-family: var(--font-primary);
+				font-size: 1.2rem;
+				color: var(--primary);
+				margin-bottom: 1rem;
+			}
+
+			.faq-item p {
+				color: var(--gray);
+				line-height: 1.6;
+			}
+
+			/* ============================================
+			   CTA SECTION
+			   ============================================ */
+			.cta-section {
+				padding: var(--spacing-lg) 0;
+			}
+
+			.cta-card {
+				background: var(--gradient-gaming);
+				border-radius: 30px;
+				padding: var(--spacing-lg) var(--spacing-md);
+				text-align: center;
+				box-shadow: var(--shadow-lg);
+			}
+
+			.cta-card h2 {
+				font-family: var(--font-primary);
+				font-size: 3rem;
+				color: var(--dark);
+				margin-bottom: 1rem;
+			}
+
+			.cta-card p {
+				font-size: 1.3rem;
+				color: var(--dark);
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+
+			.cta-buttons {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn-cta {
+				padding: 1.2rem 3rem;
+				font-family: var(--font-primary);
+				font-size: 1.2rem;
+				font-weight: 700;
+				background: transparent;
+				border: 3px solid var(--dark);
+				color: var(--dark);
+				border-radius: 50px;
+				text-decoration: none;
+				transition: all 0.3s ease;
+			}
+
+			.btn-cta:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+			}
+
+			.btn-cta.primary {
+				background: var(--dark);
+				color: var(--primary);
+			}
+
+			/* ============================================
+			   FOOTER
+			   ============================================ */
+			.footer {
+				background: var(--dark-2);
+				padding: var(--spacing-md) 0;
+				border-top: 1px solid rgba(0, 240, 255, 0.1);
+			}
+
+			.footer-bottom {
+				text-align: center;
+				color: var(--gray);
+			}
+
+			/* ============================================
+			   RESPONSIVE
+			   ============================================ */
+			@media (max-width: 768px) {
+				.nav-links {
+					display: none;
+				}
+
+				.pricing-grid,
+				.bundles-grid,
+				.tournament-grid,
+				.schedule-grid,
+				.offers-grid,
+				.faq-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.page-title {
+					font-size: 3rem;
+				}
+
+				.tournament-icon-large {
+					font-size: 4rem;
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+				}
+			}
+		</style>
+	</body>
+</html>
