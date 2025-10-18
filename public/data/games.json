@@ -1,0 +1,242 @@
+[
+	{
+		"id": 1,
+		"name": "EA SPORTS FC 24",
+		"emoji": "⚽",
+		"image": "https://upload.wikimedia.org/wikipedia/en/b/b3/EA_FC24_Cover.jpg",
+		"description": "Le jeu de football ultime avec tous vos joueurs et équipes préférés",
+		"genre": "Sport • Football",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 2,
+		"name": "Naruto Storm Connections",
+		"emoji": "🍥",
+		"image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2407/06ae9175e65c0965e44b12b4f34f7fe5aa491bbf7e5ce5c6.png",
+		"description": "Combat épique avec tous les personnages de Naruto",
+		"genre": "Combat • Anime",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 3,
+		"name": "Call of Duty: Modern Warfare III",
+		"emoji": "🎯",
+		"image": "https://upload.wikimedia.org/wikipedia/en/f/f6/MWIII_Cover_Art.png",
+		"description": "Le FPS le plus populaire avec multijoueur et campagne",
+		"genre": "FPS • Action",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 4,
+		"name": "Fortnite",
+		"emoji": "🏝️",
+		"image": "https://kevurugames.com/wp-content/uploads/2023/02/fortnite.jpg",
+		"description": "Battle Royale gratuit avec construction et combat",
+		"genre": "Battle Royale",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 5,
+		"name": "Mortal Kombat 1",
+		"emoji": "🥊",
+		"image": "https://upload.wikimedia.org/wikipedia/en/5/5b/Mortal_Kombat_1_key_art.jpeg",
+		"description": "Combat brutal avec finishers légendaires",
+		"genre": "Combat • Versus",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 6,
+		"name": "Street Fighter 6",
+		"emoji": "👊",
+		"image": "https://upload.wikimedia.org/wikipedia/en/9/94/Street_Fighter_6_box_art.jpg",
+		"description": "Le roi des jeux de combat est de retour",
+		"genre": "Combat • Versus",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "pc"]
+	},
+	{
+		"id": 7,
+		"name": "Rocket League",
+		"emoji": "🚗",
+		"image": "https://upload.wikimedia.org/wikipedia/en/1/13/Rocket_League_cover.png",
+		"description": "Football avec des voitures volantes",
+		"genre": "Sport • Voitures",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 8,
+		"name": "Marvel's Spider-Man 2",
+		"emoji": "🕷️",
+		"image": "https://preview.redd.it/official-cover-art-for-spider-man-2-out-october-20-v0-a5h4887tvu4b1.jpg?auto=webp&s=0c1c3dcd37e39d1e4e61a73e735cfc6d7e5fccec",
+		"description": "Balancez-vous dans New York en tant que Spider-Man",
+		"genre": "Action • Aventure",
+		"players": "1 joueur",
+		"platforms": ["ps5"]
+	},
+	{
+		"id": 9,
+		"name": "Gran Turismo 7",
+		"emoji": "🏎️",
+		"image": "https://upload.wikimedia.org/wikipedia/en/1/14/Gran_Turismo_7_cover_art.jpg",
+		"description": "Simulation de course ultra-réaliste",
+		"genre": "Course • Simulation",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "ps4", "vr"]
+	},
+	{
+		"id": 10,
+		"name": "Beat Saber",
+		"emoji": "🎵",
+		"image": "https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg",
+		"description": "Sabres laser rythmiques en réalité virtuelle",
+		"genre": "Rythme • VR",
+		"players": "1 joueur",
+		"platforms": ["vr"]
+	},
+	{
+		"id": 11,
+		"name": "Valorant",
+		"emoji": "🎯",
+		"image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Valorant_cover.jpg",
+		"description": "FPS tactique compétitif 5v5",
+		"genre": "FPS • Tactique",
+		"players": "1-5 joueurs",
+		"platforms": ["pc"]
+	},
+	{
+		"id": 12,
+		"name": "League of Legends",
+		"emoji": "⚔️",
+		"image": "https://i.pinimg.com/736x/20/54/b6/2054b617ac11f24e23d62e05f85303d4.jpg",
+		"description": "Le MOBA le plus populaire au monde",
+		"genre": "MOBA • Stratégie",
+		"players": "1-5 joueurs",
+		"platforms": ["pc"]
+	},
+	{
+		"id": 13,
+		"name": "Minecraft",
+		"emoji": "⛏️",
+		"image": "https://i.redd.it/which-one-is-the-superior-cover-art-v0-g4urr2d8zu3d1.png?width=1280&format=png&auto=webp&s=e786360b741069e4471bd417695df68b21465eca",
+		"description": "Construisez et explorez un monde infini",
+		"genre": "Sandbox • Créatif",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 14,
+		"name": "Tekken 8",
+		"emoji": "🥋",
+		"image": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tekken_8_cover_art.jpg",
+		"description": "Le légendaire jeu de combat 3D",
+		"genre": "Combat • Versus",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "pc"]
+	},
+	{
+		"id": 15,
+		"name": "Resident Evil Village VR",
+		"emoji": "🧟",
+		"image": "https://upload.wikimedia.org/wikipedia/en/2/2c/Resident_Evil_Village.png",
+		"description": "Horreur immersive en réalité virtuelle",
+		"genre": "Horreur • VR",
+		"players": "1 joueur",
+		"platforms": ["vr"]
+	},
+	{
+		"id": 16,
+		"name": "Among Us",
+		"emoji": "👤",
+		"image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
+		"description": "Trouvez l'imposteur parmi l'équipage",
+		"genre": "Social • Party",
+		"players": "4-10 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 17,
+		"name": "NBA 2K24",
+		"emoji": "🏀",
+		"image": "https://assets-prd.ignimgs.com/2023/07/07/nba2k24-1688744627547.jpg",
+		"description": "Simulation de basketball ultra-réaliste",
+		"genre": "Sport • Basketball",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 18,
+		"name": "God of War Ragnarök",
+		"emoji": "⚔️",
+		"image": "https://m.media-amazon.com/images/I/51xJR6gHF1L._UF1000,1000_QL80_.jpg",
+		"description": "Épopée mythologique nordique épique",
+		"genre": "Action • Aventure",
+		"players": "1 joueur",
+		"platforms": ["ps5", "ps4"]
+	},
+	{
+		"id": 19,
+		"name": "Apex Legends",
+		"emoji": "🎖️",
+		"image": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
+		"description": "Battle Royale avec héros et capacités",
+		"genre": "Battle Royale • FPS",
+		"players": "1-3 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 20,
+		"name": "Overwatch 2",
+		"emoji": "🦸",
+		"image": "https://upload.wikimedia.org/wikipedia/en/8/89/Overwatch_2_Steam_artwork.jpg",
+		"description": "Shooter d'héros 6v6 dynamique",
+		"genre": "FPS • Héros",
+		"players": "1-6 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 21,
+		"name": "Dragon Ball FighterZ",
+		"emoji": "🐉",
+		"image": "https://upload.wikimedia.org/wikipedia/en/a/ad/DBFZ_cover_art.jpg",
+		"description": "Combat 2D spectaculaire avec Dragon Ball",
+		"genre": "Combat • Anime",
+		"players": "1-2 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 22,
+		"name": "Fall Guys",
+		"emoji": "🎪",
+		"image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Fall_Guys_cover.jpg",
+		"description": "Party game chaotique et amusant",
+		"genre": "Party • Bataille",
+		"players": "1-4 joueurs",
+		"platforms": ["ps5", "ps4", "pc"]
+	},
+	{
+		"id": 23,
+		"name": "The Last of Us Part II",
+		"emoji": "🌿",
+		"image": "https://upload.wikimedia.org/wikipedia/en/4/4f/TLOU_P2_Box_Art_2.png",
+		"description": "Action-aventure post-apocalyptique intense",
+		"genre": "Action • Aventure",
+		"players": "1 joueur",
+		"platforms": ["ps5", "ps4"]
+	},
+	{
+		"id": 24,
+		"name": "Half-Life: Alyx",
+		"emoji": "👽",
+		"image": "https://www.cnet.com/a/img/resize/2b05dadb6d20f076c3c07aeebeaf5028b8b8fe75/hub/2019/11/21/19db7c73-c881-4bd4-bf96-8c2174feff67/box-art-flat.png?auto=webp&width=1200",
+		"description": "FPS révolutionnaire exclusif VR",
+		"genre": "FPS • VR",
+		"players": "1 joueur",
+		"platforms": ["vr"]
+	}
+]

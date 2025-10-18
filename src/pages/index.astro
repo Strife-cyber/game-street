@@ -1,11 +1,12 @@
 ---
 // Configuration de la page
-const title = "Game Street - Semaine de la Diversité";
-const description = "Événement gaming d'une semaine pendant la Semaine de la Diversité ! VR, PS5, PC Gaming, Tournois et plus encore !";
+const title = 'Game Street - Semaine de la Diversité';
+const description =
+	"Événement gaming d'une semaine pendant la Semaine de la Diversité ! VR, PS5, PC Gaming, Tournois et plus encore !";
 // Dates: 31 Octobre - 7 Novembre 2025
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
@@ -14,9 +15,12 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -25,7 +29,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				<div class="logo">
 					<span class="logo-icon">
 						<!--🎮-->
-						<img src="/images/street.jpg" alt="Logo Game Street" width="48" height="48"/>						
+						<img src="/images/street.jpg" alt="Logo Game Street" width="48" height="48" />
 					</span>
 					<span class="logo-text">GAME STREET</span>
 				</div>
@@ -50,7 +54,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				<div class="animated-grid"></div>
 				<div class="particles"></div>
 			</div>
-			
+
 			<div class="hero-content">
 				<div class="hero-title-container">
 					<h1 class="hero-title" data-text="GAME STREET">
@@ -58,12 +62,13 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 					</h1>
 					<p class="hero-subtitle">SEMAINE DE LA DIVERSITÉ</p>
 				</div>
-				
+
 				<p class="hero-description">
-					Venez découvrir Game Street pendant la Semaine de la Diversité ! Une semaine complète dédiée au gaming :
-					VR, PS5, PS4, PC Gaming haute performance avec écrans 2K, tournois et bien plus encore. Ouvert à tous !
+					Venez découvrir Game Street pendant la Semaine de la Diversité ! Une semaine complète
+					dédiée au gaming : VR, PS5, PS4, PC Gaming haute performance avec écrans 2K, tournois et
+					bien plus encore. Ouvert à tous !
 				</p>
-				
+
 				<div class="hero-buttons">
 					<button class="btn btn-primary">
 						<span>Rejoindre Maintenant</span>
@@ -107,19 +112,26 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				<h2 class="section-title">
 					<span class="title-glow">Ce Que Nous Offrons</span>
 				</h2>
-				
+
 				<div class="events-grid">
 					<!-- Event Card 1 -->
 					<div class="event-card card-3d">
 						<div class="card-inner">
 							<div class="event-image-placeholder">
-								<img src="/images/event-tournament.webp" alt="Tournois Gaming" class="event-image">
+								<img
+									src="/images/event-tournament.webp"
+									alt="Tournois Gaming"
+									class="event-image"
+								/>
 							</div>
-							
+
 							<div class="event-content">
 								<div class="event-date">31 OCT - 7 NOV</div>
 								<h3>Tournois Gaming</h3>
-								<p>Participez à nos tournois sur différents jeux ! Affrontez vos camarades et montrez vos compétences. Plusieurs tournois organisés pendant la semaine.</p>
+								<p>
+									Participez à nos tournois sur différents jeux ! Affrontez vos camarades et montrez
+									vos compétences. Plusieurs tournois organisés pendant la semaine.
+								</p>
 								<div class="event-tags">
 									<span class="tag">Compétition</span>
 									<span class="tag">Tous niveaux</span>
@@ -133,13 +145,16 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 					<div class="event-card card-3d">
 						<div class="card-inner">
 							<div class="event-image-placeholder">
-								<img src="/images/event-lan.webp" alt="PC Gaming & Consoles" class="event-image">
+								<img src="/images/event-lan.webp" alt="PC Gaming & Consoles" class="event-image" />
 							</div>
-							
+
 							<div class="event-content">
 								<div class="event-date">31 OCT - 7 NOV</div>
 								<h3>PC Gaming & Consoles</h3>
-								<p>Jouez sur nos PC haute performance avec écrans 2K, PS5, PS4 ou laptops ! Tous vos jeux préférés disponibles.</p>
+								<p>
+									Jouez sur nos PC haute performance avec écrans 2K, PS5, PS4 ou laptops ! Tous vos
+									jeux préférés disponibles.
+								</p>
 								<div class="event-tags">
 									<span class="tag">PS5/PS4</span>
 									<span class="tag">PC 2K</span>
@@ -156,11 +171,14 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 							<div class="event-image-placeholder">
 								<span>📸 Image VR Gaming</span>
 							</div>
-							
+
 							<div class="event-content">
 								<div class="event-date">31 OCT - 7 NOV</div>
 								<h3>Expérience VR</h3>
-								<p>Découvrez la réalité virtuelle ! Plongez dans des mondes immersifs et vivez des expériences gaming inédites avec nos casques VR.</p>
+								<p>
+									Découvrez la réalité virtuelle ! Plongez dans des mondes immersifs et vivez des
+									expériences gaming inédites avec nos casques VR.
+								</p>
 								<div class="event-tags">
 									<span class="tag">VR</span>
 									<span class="tag">Immersif</span>
@@ -184,19 +202,27 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 					<div class="feature-card floating">
 						<div class="feature-icon">🥽</div>
 						<h3>Réalité Virtuelle</h3>
-						<p>Découvrez l'immersion totale avec nos casques VR dernier cri pour des expériences gaming uniques</p>
+						<p>
+							Découvrez l'immersion totale avec nos casques VR dernier cri pour des expériences
+							gaming uniques
+						</p>
 					</div>
 
 					<div class="feature-card floating">
 						<div class="feature-icon">🎮</div>
 						<h3>PS5 & PS4</h3>
-						<p>Jouez sur les dernières consoles PlayStation avec une bibliothèque complète de jeux populaires</p>
+						<p>
+							Jouez sur les dernières consoles PlayStation avec une bibliothèque complète de jeux
+							populaires
+						</p>
 					</div>
 
 					<div class="feature-card floating">
 						<div class="feature-icon">🖥️</div>
 						<h3>PC Gaming 2K</h3>
-						<p>PC haute performance équipés d'écrans 2K pour une qualité graphique exceptionnelle</p>
+						<p>
+							PC haute performance équipés d'écrans 2K pour une qualité graphique exceptionnelle
+						</p>
 					</div>
 
 					<div class="feature-card floating">
@@ -208,13 +234,19 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 					<div class="feature-card floating">
 						<div class="feature-icon">🏆</div>
 						<h3>Tournois</h3>
-						<p>Participez à nos tournois organisés toute la semaine sur différents jeux et plateformes</p>
+						<p>
+							Participez à nos tournois organisés toute la semaine sur différents jeux et
+							plateformes
+						</p>
 					</div>
 
 					<div class="feature-card floating">
 						<div class="feature-icon">🌈</div>
 						<h3>Ouvert à Tous</h3>
-						<p>Événement inclusif pendant la Semaine de la Diversité - tous les niveaux sont les bienvenus !</p>
+						<p>
+							Événement inclusif pendant la Semaine de la Diversité - tous les niveaux sont les
+							bienvenus !
+						</p>
 					</div>
 				</div>
 			</div>
@@ -390,9 +422,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 		</footer>
 
 		<!-- Scroll to top button -->
-		<button class="scroll-to-top" id="scrollToTop" aria-label="Retour en haut">
-			↑
-		</button>
+		<button class="scroll-to-top" id="scrollToTop" aria-label="Retour en haut"> ↑ </button>
 
 		<style>
 			/* ============================================
@@ -414,25 +444,25 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				--dark-3: #16213e;
 				--light: #ffffff;
 				--gray: #8892b0;
-				
+
 				/* Gradients inspirés gaming */
 				--gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 				--gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 				--gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 				--gradient-neon: linear-gradient(135deg, var(--primary), var(--secondary));
 				--gradient-gaming: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
-				
+
 				/* Typographie moderne et futuriste */
 				--font-primary: 'Orbitron', sans-serif;
 				--font-secondary: 'Exo 2', sans-serif;
-				
+
 				/* Espacements */
 				--spacing-xs: 0.5rem;
 				--spacing-sm: 1rem;
 				--spacing-md: 2rem;
 				--spacing-lg: 4rem;
 				--spacing-xl: 6rem;
-				
+
 				/* Effets de profondeur et ombres */
 				--shadow-sm: 0 2px 10px rgba(0, 240, 255, 0.1);
 				--shadow-md: 0 10px 30px rgba(0, 240, 255, 0.2);
@@ -514,8 +544,13 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes float {
-				0%, 100% { transform: translateY(0px); }
-				50% { transform: translateY(-10px); }
+				0%,
+				100% {
+					transform: translateY(0px);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
 			}
 
 			.nav-links {
@@ -596,7 +631,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				position: absolute;
 				width: 100%;
 				height: 100%;
-				background-image: 
+				background-image:
 					linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
 					linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
 				background-size: 50px 50px;
@@ -648,7 +683,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes particleFloat {
-				0%, 100% {
+				0%,
+				100% {
 					transform: translate(0, 0) scale(1);
 				}
 				33% {
@@ -692,7 +728,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes title3DAnimation {
-				0%, 100% {
+				0%,
+				100% {
 					transform: rotateY(0deg) rotateX(0deg);
 				}
 				25% {
@@ -716,7 +753,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes pulse {
-				0%, 100% {
+				0%,
+				100% {
 					opacity: 1;
 				}
 				50% {
@@ -818,12 +856,19 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				animation: statFloat 3s ease-in-out infinite;
 			}
 
-			.stat-card:nth-child(1) { animation-delay: 0s; }
-			.stat-card:nth-child(2) { animation-delay: 0.5s; }
-			.stat-card:nth-child(3) { animation-delay: 1s; }
+			.stat-card:nth-child(1) {
+				animation-delay: 0s;
+			}
+			.stat-card:nth-child(2) {
+				animation-delay: 0.5s;
+			}
+			.stat-card:nth-child(3) {
+				animation-delay: 1s;
+			}
 
 			@keyframes statFloat {
-				0%, 100% {
+				0%,
+				100% {
 					transform: translateY(0) translateZ(50px);
 				}
 				50% {
@@ -874,7 +919,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes imagePlaceholderPulse {
-				0%, 100% {
+				0%,
+				100% {
 					border-color: rgba(0, 240, 255, 0.3);
 					transform: scale(1);
 				}
@@ -978,7 +1024,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			.event-card:hover .card-inner {
 				transform: rotateY(5deg) rotateX(5deg) translateZ(30px);
 				border-color: var(--primary);
-				box-shadow: 
+				box-shadow:
 					0 30px 60px rgba(0, 240, 255, 0.3),
 					0 0 40px rgba(0, 240, 255, 0.2);
 			}
@@ -1100,15 +1146,28 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				animation: featureFloat 6s ease-in-out infinite;
 			}
 
-			.feature-card:nth-child(1) { animation-delay: 0s; }
-			.feature-card:nth-child(2) { animation-delay: 1s; }
-			.feature-card:nth-child(3) { animation-delay: 2s; }
-			.feature-card:nth-child(4) { animation-delay: 3s; }
-			.feature-card:nth-child(5) { animation-delay: 4s; }
-			.feature-card:nth-child(6) { animation-delay: 5s; }
+			.feature-card:nth-child(1) {
+				animation-delay: 0s;
+			}
+			.feature-card:nth-child(2) {
+				animation-delay: 1s;
+			}
+			.feature-card:nth-child(3) {
+				animation-delay: 2s;
+			}
+			.feature-card:nth-child(4) {
+				animation-delay: 3s;
+			}
+			.feature-card:nth-child(5) {
+				animation-delay: 4s;
+			}
+			.feature-card:nth-child(6) {
+				animation-delay: 5s;
+			}
 
 			@keyframes featureFloat {
-				0%, 100% {
+				0%,
+				100% {
 					transform: translateY(0) rotateZ(0deg);
 				}
 				50% {
@@ -1134,7 +1193,9 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes iconSpin {
-				0%, 90%, 100% {
+				0%,
+				90%,
+				100% {
 					transform: rotate(0deg);
 				}
 				95% {
@@ -1143,7 +1204,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes iconBounce {
-				0%, 100% {
+				0%,
+				100% {
 					transform: scale(1);
 				}
 				50% {
@@ -1191,13 +1253,22 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				animation: pulse3D 4s ease-in-out infinite;
 			}
 
-			.community-card:nth-child(1) { animation-delay: 0s; }
-			.community-card:nth-child(2) { animation-delay: 1s; }
-			.community-card:nth-child(3) { animation-delay: 2s; }
-			.community-card:nth-child(4) { animation-delay: 3s; }
+			.community-card:nth-child(1) {
+				animation-delay: 0s;
+			}
+			.community-card:nth-child(2) {
+				animation-delay: 1s;
+			}
+			.community-card:nth-child(3) {
+				animation-delay: 2s;
+			}
+			.community-card:nth-child(4) {
+				animation-delay: 3s;
+			}
 
 			@keyframes pulse3D {
-				0%, 100% {
+				0%,
+				100% {
 					transform: scale(1) translateZ(0);
 				}
 				50% {
@@ -1311,7 +1382,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}
 
 			@keyframes newsletterFloat {
-				0%, 100% {
+				0%,
+				100% {
 					transform: translateY(0) rotateX(0deg);
 				}
 				50% {
@@ -1386,7 +1458,8 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 				margin-bottom: var(--spacing-md);
 			}
 
-			.footer-col h3, .footer-col h4 {
+			.footer-col h3,
+			.footer-col h4 {
 				font-family: var(--font-primary);
 				color: var(--primary);
 				margin-bottom: 1rem;
@@ -1550,7 +1623,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 		<script>
 			// Scroll to top functionality
 			const scrollToTopBtn = document.getElementById('scrollToTop');
-			
+
 			window.addEventListener('scroll', () => {
 				if (window.pageYOffset > 300) {
 					scrollToTopBtn?.classList.add('visible');
@@ -1562,12 +1635,12 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			scrollToTopBtn?.addEventListener('click', () => {
 				window.scrollTo({
 					top: 0,
-					behavior: 'smooth'
+					behavior: 'smooth',
 				});
 			});
 
 			// Smooth scroll pour les liens d'ancrage
-			document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+			document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
 				anchor.addEventListener('click', function (e: Event) {
 					e.preventDefault();
 					const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
@@ -1575,7 +1648,7 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 					if (target) {
 						target.scrollIntoView({
 							behavior: 'smooth',
-							block: 'start'
+							block: 'start',
 						});
 					}
 				});
@@ -1584,11 +1657,11 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			// Animation au scroll
 			const observerOptions = {
 				threshold: 0.1,
-				rootMargin: '0px 0px -50px 0px'
+				rootMargin: '0px 0px -50px 0px',
 			};
 
 			const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
+				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						(entry.target as HTMLElement).style.opacity = '1';
 						(entry.target as HTMLElement).style.transform = 'translateY(0)';
@@ -1597,12 +1670,14 @@ const description = "Événement gaming d'une semaine pendant la Semaine de la D
 			}, observerOptions);
 
 			// Observer les éléments pour l'animation au scroll
-			document.querySelectorAll<HTMLElement>('.event-card, .feature-card, .community-card, .gallery-item').forEach(el => {
-				el.style.opacity = '0';
-				el.style.transform = 'translateY(30px)';
-				el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-				observer.observe(el);
-			});
+			document
+				.querySelectorAll<HTMLElement>('.event-card, .feature-card, .community-card, .gallery-item')
+				.forEach((el) => {
+					el.style.opacity = '0';
+					el.style.transform = 'translateY(30px)';
+					el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+					observer.observe(el);
+				});
 		</script>
 	</body>
 </html>
