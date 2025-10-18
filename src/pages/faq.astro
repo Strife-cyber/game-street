@@ -1,0 +1,1133 @@
+---
+// Configuration de la page FAQ
+const title = 'FAQ - Game Street';
+const description = 'Questions fréquemment posées sur la Semaine de la Diversité';
+
+// Importer les FAQ depuis le fichier JSON
+import faqData from '../../public/data/faq.json';
+const faqs = faqData;
+
+// Les questions utilisateur sont gérées entièrement côté client
+// et ajoutées automatiquement à la FAQ
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="nav">
+			<div class="nav-container">
+				<a href="/" class="logo">
+					<span class="logo-icon">🎮</span>
+					<span class="logo-text">GAME STREET</span>
+				</a>
+				<ul class="nav-links">
+					<li><a href="/">Accueil</a></li>
+					<li><a href="/games">Jeux</a></li>
+					<li><a href="/tarifs">Tarifs</a></li>
+					<li><a href="/faq" class="active">FAQ</a></li>
+					<li><a href="/#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="faq-hero">
+			<div class="hero-bg">
+				<div class="animated-grid"></div>
+				<div class="particles"></div>
+			</div>
+
+			<div class="hero-content">
+				<h1 class="page-title">
+					<span class="title-3d">FAQ</span>
+				</h1>
+				<p class="page-subtitle">Questions fréquemment posées sur la Semaine de la Diversité</p>
+				<div class="hero-badge">
+					<span class="badge-icon">❓</span>
+					<span class="badge-text">Posez vos questions</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="faq-section">
+			<div class="container">
+				<div class="faq-header">
+					<h2 class="section-title">
+						<span class="title-glow">Questions & Réponses</span>
+					</h2>
+					<p class="section-subtitle">Trouvez rapidement les réponses à vos questions</p>
+				</div>
+
+				<!-- Search Bar -->
+				<div class="search-container">
+					<input
+						type="text"
+						id="faqSearch"
+						placeholder="Rechercher dans les FAQ..."
+						class="search-input"
+					/>
+					<span class="search-icon">🔍</span>
+				</div>
+
+				<!-- Category Filters -->
+				<div class="category-filters">
+					<button class="filter-btn active" data-category="all">Toutes</button>
+					<button class="filter-btn" data-category="horaires">Horaires</button>
+					<button class="filter-btn" data-category="réservation">Réservation</button>
+					<button class="filter-btn" data-category="paiement">Paiement</button>
+					<button class="filter-btn" data-category="tournois">Tournois</button>
+					<button class="filter-btn" data-category="vr">VR</button>
+					<button class="filter-btn" data-category="jeux">Jeux</button>
+				</div>
+
+				<!-- FAQ List -->
+				<div class="faq-list">
+					{
+						faqs.map(
+							(faq: {
+								id: number;
+								question: string;
+								answer: string;
+								category: string;
+								date: string;
+								author: string;
+							}) => (
+								<div class="faq-item" data-category={faq.category}>
+									<div class="faq-question">
+										<h3>{faq.question}</h3>
+										<button class="toggle-btn" aria-label="Ouvrir/Fermer">
+											<span class="toggle-icon">+</span>
+										</button>
+									</div>
+									<div class="faq-answer">
+										<p>{faq.answer}</p>
+										<div class="faq-meta">
+											<span class="faq-author">Par {faq.author}</span>
+											<span class="faq-date">{new Date(faq.date).toLocaleDateString('fr-FR')}</span>
+										</div>
+									</div>
+								</div>
+							)
+						)
+					}
+				</div>
+
+				<!-- No Results -->
+				<div class="no-results" style="display: none;">
+					<h3>Aucune question trouvée</h3>
+					<p>Essayez avec d'autres mots-clés ou contactez-nous directement.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Ask Question Section -->
+		<section class="ask-question-section">
+			<div class="container">
+				<div class="ask-question-card">
+					<h2>💬 Posez votre question</h2>
+					<p>Une question non trouvée ? Posez-la ici et nous l'ajouterons à la FAQ !</p>
+
+					<form id="questionForm" class="question-form">
+						<div class="form-group">
+							<label for="userQuestion">Votre question :</label>
+							<textarea
+								id="userQuestion"
+								name="question"
+								placeholder="Ex: Quels sont les horaires d'ouverture ?"
+								required></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="userName">Votre nom (optionnel) :</label>
+							<input type="text" id="userName" name="name" placeholder="Votre nom ou pseudo" />
+						</div>
+
+						<div class="form-group">
+							<label for="questionCategory">Catégorie :</label>
+							<select id="questionCategory" name="category" required>
+								<option value="">Choisir une catégorie</option>
+								<option value="horaires">Horaires</option>
+								<option value="réservation">Réservation</option>
+								<option value="paiement">Paiement</option>
+								<option value="tournois">Tournois</option>
+								<option value="vr">VR</option>
+								<option value="jeux">Jeux</option>
+								<option value="forfaits">Forfaits</option>
+								<option value="autre">Autre</option>
+							</select>
+						</div>
+
+						<button type="submit" class="btn-submit">
+							<span class="btn-text">Envoyer ma question</span>
+							<span class="btn-icon">🚀</span>
+						</button>
+					</form>
+
+					<div id="successMessage" class="success-message" style="display: none;">
+						<h3>✅ Question ajoutée !</h3>
+						<p>
+							Votre question a été ajoutée à la FAQ et est maintenant visible pour tous les
+							utilisateurs !
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="contact-section">
+			<div class="container">
+				<div class="contact-card">
+					<h2>📞 Autres moyens de contact</h2>
+					<p>Besoin d'aide immédiate ? Contactez-nous directement !</p>
+					<div class="contact-buttons">
+						<a href="/#contact" class="btn-contact">Nous contacter</a>
+						<a href="/tarifs" class="btn-contact secondary">Voir les tarifs</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-bottom">
+					<p>&copy; 2025 Game Street - Semaine de la Diversité</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			/* ============================================
+			   VARIABLES & RESET
+			   ============================================ */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--primary: #00f0ff;
+				--secondary: #ff00ff;
+				--accent: #ffff00;
+				--success: #00ff88;
+				--dark: #0a0a0f;
+				--dark-2: #1a1a2e;
+				--light: #ffffff;
+				--gray: #8892b0;
+				--gradient-neon: linear-gradient(135deg, var(--primary), var(--secondary));
+				--gradient-gaming: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+				--font-primary: 'Orbitron', sans-serif;
+				--font-secondary: 'Exo 2', sans-serif;
+				--spacing-sm: 1rem;
+				--spacing-md: 2rem;
+				--spacing-lg: 4rem;
+				--shadow-lg: 0 20px 60px rgba(0, 240, 255, 0.3);
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				font-family: var(--font-secondary);
+				background-color: var(--dark);
+				color: var(--light);
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 var(--spacing-md);
+			}
+
+			/* ============================================
+			   NAVIGATION
+			   ============================================ */
+			.nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 1000;
+				background: rgba(10, 10, 15, 0.95);
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+			}
+
+			.nav-container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 1rem 2rem;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-family: var(--font-primary);
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: var(--primary);
+				text-shadow: 0 0 20px var(--primary);
+				text-decoration: none;
+				transition: transform 0.3s ease;
+			}
+
+			.logo:hover {
+				transform: scale(1.05);
+			}
+
+			.logo-icon {
+				font-size: 2rem;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+				list-style: none;
+			}
+
+			.nav-links a {
+				color: var(--gray);
+				text-decoration: none;
+				font-weight: 600;
+				transition: color 0.3s ease;
+			}
+
+			.nav-links a.active,
+			.nav-links a:hover {
+				color: var(--primary);
+			}
+
+			/* ============================================
+			   HERO SECTION
+			   ============================================ */
+			.faq-hero {
+				position: relative;
+				min-height: 60vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				padding-top: 80px;
+			}
+
+			.hero-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			.animated-grid {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image:
+					linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+					linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+				background-size: 50px 50px;
+				animation: gridMove 20s linear infinite;
+				transform: perspective(500px) rotateX(60deg);
+			}
+
+			@keyframes gridMove {
+				0% {
+					background-position: 0 0;
+				}
+				100% {
+					background-position: 50px 50px;
+				}
+			}
+
+			.particles {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			.particles::before,
+			.particles::after {
+				content: '';
+				position: absolute;
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				filter: blur(100px);
+				opacity: 0.3;
+				animation: particleFloat 10s ease-in-out infinite;
+			}
+
+			.particles::before {
+				background: var(--primary);
+				top: 20%;
+				left: 10%;
+			}
+
+			.particles::after {
+				background: var(--secondary);
+				bottom: 20%;
+				right: 10%;
+				animation-delay: 5s;
+			}
+
+			@keyframes particleFloat {
+				0%,
+				100% {
+					transform: translate(0, 0);
+				}
+				50% {
+					transform: translate(50px, -50px);
+				}
+			}
+
+			.hero-content {
+				position: relative;
+				z-index: 10;
+				text-align: center;
+				padding: var(--spacing-md);
+			}
+
+			.page-title {
+				font-family: var(--font-primary);
+				font-size: clamp(3rem, 8vw, 6rem);
+				font-weight: 900;
+				margin-bottom: 1rem;
+			}
+
+			.title-3d {
+				display: inline-block;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				animation: title3DAnimation 5s ease-in-out infinite;
+				filter: drop-shadow(0 10px 20px rgba(0, 240, 255, 0.5));
+			}
+
+			@keyframes title3DAnimation {
+				0%,
+				100% {
+					transform: rotateY(0deg);
+				}
+				50% {
+					transform: rotateY(5deg);
+				}
+			}
+
+			.page-subtitle {
+				font-size: 1.3rem;
+				color: var(--gray);
+				margin-bottom: 2rem;
+			}
+
+			.hero-badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 1rem 2rem;
+				background: var(--gradient-neon);
+				border-radius: 50px;
+				font-weight: 700;
+				color: var(--dark);
+				animation: badgePulse 2s ease-in-out infinite;
+			}
+
+			@keyframes badgePulse {
+				0%,
+				100% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.05);
+				}
+			}
+
+			.badge-icon {
+				font-size: 1.5rem;
+			}
+
+			/* ============================================
+			   FAQ SECTION
+			   ============================================ */
+			.faq-section {
+				padding: var(--spacing-lg) 0;
+			}
+
+			.faq-header {
+				text-align: center;
+				margin-bottom: var(--spacing-lg);
+			}
+
+			.section-title {
+				font-family: var(--font-primary);
+				font-size: clamp(2.5rem, 5vw, 4rem);
+				font-weight: 900;
+				margin-bottom: 1rem;
+			}
+
+			.title-glow {
+				display: inline-block;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.section-subtitle {
+				font-size: 1.2rem;
+				color: var(--gray);
+			}
+
+			/* Search Bar */
+			.search-container {
+				position: relative;
+				max-width: 600px;
+				margin: 0 auto var(--spacing-lg);
+			}
+
+			.search-input {
+				width: 100%;
+				padding: 1.2rem 3rem 1.2rem 1.5rem;
+				background: rgba(26, 26, 46, 0.8);
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				border-radius: 50px;
+				color: var(--light);
+				font-size: 1.1rem;
+				backdrop-filter: blur(10px);
+				transition: all 0.3s ease;
+			}
+
+			.search-input:focus {
+				outline: none;
+				border-color: var(--primary);
+				box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+			}
+
+			.search-icon {
+				position: absolute;
+				right: 1.5rem;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 1.2rem;
+				color: var(--gray);
+			}
+
+			/* Category Filters */
+			.category-filters {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-bottom: var(--spacing-lg);
+			}
+
+			.filter-btn {
+				padding: 0.8rem 1.5rem;
+				background: rgba(26, 26, 46, 0.8);
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				color: var(--gray);
+				font-family: var(--font-primary);
+				font-weight: 700;
+				border-radius: 25px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				transform-style: preserve-3d;
+			}
+
+			.filter-btn:hover {
+				border-color: var(--primary);
+				color: var(--primary);
+				transform: translateY(-3px) scale(1.05);
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.3);
+			}
+
+			.filter-btn.active {
+				background: var(--gradient-neon);
+				color: var(--dark);
+				border-color: transparent;
+				transform: translateY(-3px);
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
+			}
+
+			/* FAQ List */
+			.faq-list {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.faq-item {
+				background: rgba(26, 26, 46, 0.8);
+				border-radius: 20px;
+				border: 2px solid rgba(0, 240, 255, 0.1);
+				backdrop-filter: blur(10px);
+				transition: all 0.3s ease;
+				overflow: hidden;
+			}
+
+			.faq-item:hover {
+				border-color: var(--primary);
+				transform: translateY(-5px);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.faq-question {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1.5rem;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+
+			.faq-question:hover {
+				background: rgba(0, 240, 255, 0.05);
+			}
+
+			.faq-question h3 {
+				font-family: var(--font-primary);
+				font-size: 1.3rem;
+				color: var(--primary);
+				margin: 0;
+			}
+
+			.toggle-btn {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: var(--gradient-neon);
+				border: none;
+				color: var(--dark);
+				font-size: 1.5rem;
+				font-weight: 900;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.toggle-btn:hover {
+				transform: scale(1.1);
+			}
+
+			.toggle-icon {
+				transition: transform 0.3s ease;
+			}
+
+			.faq-item.active .toggle-icon {
+				transform: rotate(45deg);
+			}
+
+			.faq-answer {
+				padding: 0 1.5rem 1.5rem;
+				max-height: 0;
+				overflow: hidden;
+				transition: all 0.3s ease;
+			}
+
+			.faq-item.active .faq-answer {
+				max-height: 200px;
+			}
+
+			.faq-answer p {
+				color: var(--light);
+				margin-bottom: 1rem;
+				line-height: 1.6;
+			}
+
+			.faq-meta {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 0.9rem;
+				color: var(--gray);
+			}
+
+			.faq-author {
+				font-weight: 600;
+			}
+
+			/* No Results */
+			.no-results {
+				text-align: center;
+				padding: var(--spacing-lg);
+				color: var(--gray);
+			}
+
+			.no-results h3 {
+				font-family: var(--font-primary);
+				font-size: 2rem;
+				margin-bottom: 1rem;
+				color: var(--primary);
+			}
+
+			/* ============================================
+			   ASK QUESTION SECTION
+			   ============================================ */
+			.ask-question-section {
+				padding: var(--spacing-lg) 0;
+				background: rgba(26, 26, 46, 0.3);
+			}
+
+			.ask-question-card {
+				background: rgba(26, 26, 46, 0.9);
+				border-radius: 30px;
+				padding: var(--spacing-lg);
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				backdrop-filter: blur(20px);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.ask-question-card h2 {
+				font-family: var(--font-primary);
+				font-size: 2.5rem;
+				text-align: center;
+				margin-bottom: 1rem;
+				background: var(--gradient-neon);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.ask-question-card p {
+				text-align: center;
+				font-size: 1.2rem;
+				color: var(--gray);
+				margin-bottom: 2rem;
+			}
+
+			.question-form {
+				max-width: 600px;
+				margin: 0 auto;
+			}
+
+			.form-group {
+				margin-bottom: 1.5rem;
+			}
+
+			.form-group label {
+				display: block;
+				font-family: var(--font-primary);
+				font-size: 1.1rem;
+				font-weight: 700;
+				color: var(--primary);
+				margin-bottom: 0.5rem;
+			}
+
+			.form-group input,
+			.form-group textarea,
+			.form-group select {
+				width: 100%;
+				padding: 1rem;
+				background: rgba(10, 10, 15, 0.8);
+				border: 2px solid rgba(0, 240, 255, 0.2);
+				border-radius: 15px;
+				color: var(--light);
+				font-size: 1rem;
+				font-family: var(--font-secondary);
+				transition: all 0.3s ease;
+				backdrop-filter: blur(10px);
+			}
+
+			.form-group input:focus,
+			.form-group textarea:focus,
+			.form-group select:focus {
+				outline: none;
+				border-color: var(--primary);
+				box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+			}
+
+			.form-group textarea {
+				min-height: 120px;
+				resize: vertical;
+			}
+
+			.btn-submit {
+				width: 100%;
+				padding: 1.2rem 2rem;
+				background: var(--gradient-neon);
+				border: none;
+				border-radius: 50px;
+				color: var(--dark);
+				font-family: var(--font-primary);
+				font-size: 1.2rem;
+				font-weight: 900;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 0.5rem;
+				transform-style: preserve-3d;
+			}
+
+			.btn-submit:hover {
+				transform: translateY(-5px) scale(1.02);
+				box-shadow: 0 20px 50px rgba(0, 240, 255, 0.4);
+			}
+
+			.btn-submit:active {
+				transform: translateY(-2px) scale(0.98);
+			}
+
+			.btn-submit:disabled {
+				opacity: 0.7;
+				cursor: not-allowed;
+				transform: none;
+			}
+
+			.btn-submit:disabled:hover {
+				transform: none;
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.3);
+			}
+
+			.btn-icon {
+				font-size: 1.5rem;
+				animation: rocketPulse 2s ease-in-out infinite;
+			}
+
+			@keyframes rocketPulse {
+				0%,
+				100% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.2);
+				}
+			}
+
+			.success-message {
+				background: rgba(0, 255, 136, 0.1);
+				border: 2px solid var(--success);
+				border-radius: 20px;
+				padding: 2rem;
+				text-align: center;
+				margin-top: 2rem;
+				animation: successSlide 0.5s ease-out;
+			}
+
+			@keyframes successSlide {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			.success-message h3 {
+				font-family: var(--font-primary);
+				font-size: 1.8rem;
+				color: var(--success);
+				margin-bottom: 1rem;
+			}
+
+			.success-message p {
+				color: var(--light);
+				font-size: 1.1rem;
+			}
+
+			/* ============================================
+			   CONTACT SECTION
+			   ============================================ */
+			.contact-section {
+				padding: var(--spacing-lg) 0;
+				background: rgba(26, 26, 46, 0.3);
+			}
+
+			.contact-card {
+				background: var(--gradient-gaming);
+				border-radius: 30px;
+				padding: var(--spacing-lg) var(--spacing-md);
+				text-align: center;
+				box-shadow: var(--shadow-lg);
+			}
+
+			.contact-card h2 {
+				font-family: var(--font-primary);
+				font-size: 2.5rem;
+				color: var(--dark);
+				margin-bottom: 1rem;
+			}
+
+			.contact-card p {
+				font-size: 1.2rem;
+				color: var(--dark);
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+
+			.contact-buttons {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn-contact {
+				padding: 1rem 2rem;
+				font-family: var(--font-primary);
+				font-size: 1.1rem;
+				font-weight: 700;
+				background: transparent;
+				border: 3px solid var(--dark);
+				color: var(--dark);
+				border-radius: 50px;
+				text-decoration: none;
+				transition: all 0.3s ease;
+			}
+
+			.btn-contact:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+			}
+
+			.btn-contact.secondary {
+				background: var(--dark);
+				color: var(--primary);
+			}
+
+			/* ============================================
+			   FOOTER
+			   ============================================ */
+			.footer {
+				background: var(--dark-2);
+				padding: var(--spacing-md) 0;
+				border-top: 1px solid rgba(0, 240, 255, 0.1);
+			}
+
+			.footer-bottom {
+				text-align: center;
+				color: var(--gray);
+			}
+
+			/* ============================================
+			   RESPONSIVE
+			   ============================================ */
+			@media (max-width: 768px) {
+				.nav-links {
+					display: none;
+				}
+
+				.category-filters {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.contact-buttons {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		</style>
+
+		<script>
+			// FAQ functionality
+			document.addEventListener('DOMContentLoaded', function () {
+				const faqItems = document.querySelectorAll('.faq-item');
+				const searchInput = document.getElementById('faqSearch') as HTMLInputElement;
+				const filterBtns = document.querySelectorAll('.filter-btn');
+				const noResults = document.querySelector('.no-results') as HTMLElement;
+				const questionForm = document.getElementById('questionForm') as HTMLFormElement;
+				const successMessage = document.getElementById('successMessage') as HTMLElement;
+				const faqList = document.querySelector('.faq-list') as HTMLElement;
+
+				// Load user questions from localStorage (for display only)
+				function loadUserQuestions() {
+					const userQuestions = JSON.parse(localStorage.getItem('userQuestions') || '[]');
+
+					userQuestions.forEach((faq: any) => {
+						addQuestionToFAQ(faq);
+					});
+				}
+
+				// Function to add a single question to the FAQ list
+				function addQuestionToFAQ(faq: any) {
+					// Check if question already exists
+					const existingQuestion = Array.from(faqItems).find(
+						(item) => item.querySelector('h3')?.textContent === faq.question
+					);
+
+					if (!existingQuestion) {
+						// Create new FAQ item element
+						const faqItem = document.createElement('div');
+						faqItem.className = 'faq-item';
+						faqItem.setAttribute('data-category', faq.category);
+
+						faqItem.innerHTML = `
+							<div class="faq-question">
+								<h3>${faq.question}</h3>
+								<button class="toggle-btn" aria-label="Ouvrir/Fermer">
+									<span class="toggle-icon">+</span>
+								</button>
+							</div>
+							<div class="faq-answer">
+								<p>${faq.answer}</p>
+								<div class="faq-meta">
+									<span class="faq-author">Par ${faq.author}</span>
+									<span class="faq-date">${new Date(faq.date).toLocaleDateString('fr-FR')}</span>
+								</div>
+							</div>
+						`;
+
+						// Add to FAQ list
+						faqList?.appendChild(faqItem);
+
+						// Add click event to new item
+						const question = faqItem.querySelector('.faq-question');
+						question?.addEventListener('click', () => {
+							faqItem.classList.toggle('active');
+						});
+
+						// Add to faqItems NodeList for search/filter functionality
+						(faqItems as any).push(faqItem);
+					}
+				}
+
+				// Load user questions on page load
+				loadUserQuestions();
+
+				// Toggle FAQ items
+				faqItems.forEach((item) => {
+					const question = item.querySelector('.faq-question');
+					question?.addEventListener('click', () => {
+						item.classList.toggle('active');
+					});
+				});
+
+				// Search functionality
+				searchInput?.addEventListener('input', function (this: HTMLInputElement) {
+					const searchTerm = this.value.toLowerCase();
+					let visibleCount = 0;
+
+					faqItems.forEach((item) => {
+						const question = item.querySelector('h3')?.textContent?.toLowerCase() || '';
+						const answer = item.querySelector('p')?.textContent?.toLowerCase() || '';
+						const matches = question.includes(searchTerm) || answer.includes(searchTerm);
+
+						if (matches) {
+							(item as HTMLElement).style.display = 'block';
+							visibleCount++;
+						} else {
+							(item as HTMLElement).style.display = 'none';
+						}
+					});
+
+					noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+				});
+
+				// Filter functionality
+				filterBtns.forEach((btn) => {
+					btn.addEventListener('click', function (this: HTMLElement) {
+						const category = this.getAttribute('data-category');
+
+						// Update active button
+						filterBtns.forEach((b) => b.classList.remove('active'));
+						this.classList.add('active');
+
+						// Filter items
+						faqItems.forEach((item) => {
+							const itemCategory = item.getAttribute('data-category');
+							if (category === 'all' || itemCategory === category) {
+								(item as HTMLElement).style.display = 'block';
+							} else {
+								(item as HTMLElement).style.display = 'none';
+							}
+						});
+					});
+				});
+
+				// Question form submission
+				questionForm?.addEventListener('submit', async function (e) {
+					e.preventDefault();
+
+					const formData = new FormData(this);
+					const question = formData.get('question') as string;
+					const name = (formData.get('name') as string) || 'Anonyme';
+					const category = formData.get('category') as string;
+
+					// Show loading state
+					const submitBtn = this.querySelector('.btn-submit') as HTMLButtonElement;
+					const originalText = submitBtn.innerHTML;
+					submitBtn.innerHTML =
+						'<span class="btn-text">Envoi en cours...</span><span class="btn-icon">⏳</span>';
+					submitBtn.disabled = true;
+
+					try {
+						// Send to API
+						const response = await fetch('/api/add-question', {
+							method: 'POST',
+							headers: {
+								'Content-Type': 'application/json',
+							},
+							body: JSON.stringify({
+								question: question,
+								author: name,
+								category: category,
+							}),
+						});
+
+						const result = await response.json();
+
+						if (result.success) {
+							// Add to FAQ list immediately
+							addQuestionToFAQ(result.question);
+
+							// Show success message
+							successMessage.style.display = 'block';
+							questionForm.style.display = 'none';
+
+							// Scroll to success message
+							successMessage.scrollIntoView({ behavior: 'smooth' });
+
+							// Reset form
+							this.reset();
+
+							// Hide success message after 3 seconds and show form again
+							setTimeout(() => {
+								successMessage.style.display = 'none';
+								questionForm.style.display = 'block';
+							}, 3000);
+						} else {
+							throw new Error('Failed to add question');
+						}
+					} catch (error) {
+						alert("Erreur lors de l'ajout de la question. Veuillez réessayer.");
+						console.error('Error:', error);
+					} finally {
+						// Reset button
+						submitBtn.innerHTML = originalText;
+						submitBtn.disabled = false;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

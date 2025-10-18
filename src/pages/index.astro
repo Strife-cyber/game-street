@@ -37,8 +37,7 @@ const description =
 					<li><a href="/">Accueil</a></li>
 					<li><a href="/games">Jeux</a></li>
 					<li><a href="/tarifs">Tarifs</a></li>
-					<li><a href="/#events">Activités</a></li>
-					<li><a href="/#features">Équipement</a></li>
+					<li><a href="/faq">FAQ</a></li>
 					<li><a href="/#contact">Contact</a></li>
 				</ul>
 				<button class="mobile-menu-btn" aria-label="Menu">
@@ -108,6 +107,104 @@ const description =
 		</section>
 
 		<!-- Section Événements -->
+		<!-- 3D Games Diaporama Section -->
+		<!-- <section class="games-diaporama-section">
+			<div class="container">
+				<h2 class="section-title">
+					<span class="title-3d">Jeux en 3D</span>
+				</h2>
+				<p class="section-subtitle">Explorez nos jeux dans un diaporama 3D immersif</p>
+
+				<div class="diaporama-container">
+					<div class="diaporama-track">
+						<div class="game-slide active" data-game="fifa">
+							<div class="slide-3d">
+								<img
+									src="https://upload.wikimedia.org/wikipedia/en/b/b3/EA_FC24_Cover.jpg"
+									alt="EA SPORTS FC 24"
+									class="slide-image"
+								/>
+								<div class="slide-content">
+									<h3>⚽ EA SPORTS FC 24</h3>
+									<p>Le football ultime avec tous vos joueurs préférés</p>
+									<div class="slide-platforms">
+										<span class="platform-badge ps5">PS5</span>
+										<span class="platform-badge ps4">PS4</span>
+										<span class="platform-badge pc">PC</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="game-slide" data-game="naruto">
+							<div class="slide-3d">
+								<img
+									src="https://image.api.playstation.com/vulcan/ap/rnd/202302/2407/06ae9175e65c0965e44b12b4f34f7fe5aa491bbf7e5ce5c6.png"
+									alt="Naruto Storm Connections"
+									class="slide-image"
+								/>
+								<div class="slide-content">
+									<h3>🍥 Naruto Storm Connections</h3>
+									<p>Combat épique avec tous les personnages de Naruto</p>
+									<div class="slide-platforms">
+										<span class="platform-badge ps5">PS5</span>
+										<span class="platform-badge ps4">PS4</span>
+										<span class="platform-badge pc">PC</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="game-slide" data-game="cod">
+							<div class="slide-3d">
+								<img
+									src="https://upload.wikimedia.org/wikipedia/en/f/f6/MWIII_Cover_Art.png"
+									alt="Call of Duty: Modern Warfare III"
+									class="slide-image"
+								/>
+								<div class="slide-content">
+									<h3>🎯 Call of Duty: MW III</h3>
+									<p>Le FPS le plus populaire avec multijoueur et campagne</p>
+									<div class="slide-platforms">
+										<span class="platform-badge ps5">PS5</span>
+										<span class="platform-badge ps4">PS4</span>
+										<span class="platform-badge pc">PC</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="game-slide" data-game="mortal-kombat">
+							<div class="slide-3d">
+								<img
+									src="https://upload.wikimedia.org/wikipedia/en/5/5b/Mortal_Kombat_1_key_art.jpeg"
+									alt="Mortal Kombat 1"
+									class="slide-image"
+								/>
+								<div class="slide-content">
+									<h3>🥊 Mortal Kombat 1</h3>
+									<p>Combat brutal avec finishers légendaires</p>
+									<div class="slide-platforms">
+										<span class="platform-badge ps5">PS5</span>
+										<span class="platform-badge ps4">PS4</span>
+										<span class="platform-badge pc">PC</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="diaporama-controls">
+						<button class="control-btn prev" aria-label="Précédent">‹</button>
+						<div class="dots-container">
+							<span class="dot active" data-slide="0"></span>
+							<span class="dot" data-slide="1"></span>
+							<span class="dot" data-slide="2"></span>
+							<span class="dot" data-slide="3"></span>
+						</div>
+						<button class="control-btn next" aria-label="Suivant">›</button>
+					</div>
+				</div>
+			</div>
+		</section>-->
+
 		<section id="events" class="events-section">
 			<div class="container">
 				<h2 class="section-title">
@@ -638,6 +735,8 @@ const description =
 				justify-content: center;
 				overflow: hidden;
 				padding-top: 80px;
+				perspective: 2000px;
+				transform-style: preserve-3d;
 			}
 
 			.hero-bg {
@@ -724,6 +823,24 @@ const description =
 				text-align: center;
 				max-width: 1200px;
 				padding: var(--spacing-md);
+				transform-style: preserve-3d;
+				animation: heroFloat 6s ease-in-out infinite;
+			}
+
+			@keyframes heroFloat {
+				0%,
+				100% {
+					transform: translateY(0) rotateX(0deg) rotateY(0deg);
+				}
+				25% {
+					transform: translateY(-10px) rotateX(2deg) rotateY(1deg);
+				}
+				50% {
+					transform: translateY(-5px) rotateX(-1deg) rotateY(-1deg);
+				}
+				75% {
+					transform: translateY(-15px) rotateX(1deg) rotateY(2deg);
+				}
 			}
 
 			.hero-title-container {
@@ -1009,8 +1126,218 @@ const description =
 			}
 
 			/* ============================================
-			   ÉVÉNEMENTS SECTION
-			   ============================================ */
+		   3D GAMES DIAPORAMA SECTION
+		   ============================================ */
+			.games-diaporama-section {
+				padding: var(--spacing-xl) 0;
+				background: linear-gradient(135deg, rgba(0, 240, 255, 0.05), rgba(255, 0, 255, 0.05));
+				position: relative;
+				overflow: hidden;
+			}
+
+			.diaporama-container {
+				position: relative;
+				max-width: 1200px;
+				margin: 0 auto;
+				perspective: 2000px;
+			}
+
+			.diaporama-track {
+				display: flex;
+				transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+				transform-style: preserve-3d;
+			}
+
+			.game-slide {
+				flex: 0 0 100%;
+				position: relative;
+				transform-style: preserve-3d;
+				transition: all 0.8s ease;
+			}
+
+			.game-slide:not(.active) {
+				transform: translateZ(-100px) rotateY(45deg) scale(0.8);
+				opacity: 0.6;
+			}
+
+			.game-slide.active {
+				transform: translateZ(0) rotateY(0deg) scale(1);
+				opacity: 1;
+			}
+
+			.slide-3d {
+				position: relative;
+				background: rgba(26, 26, 46, 0.9);
+				border-radius: 30px;
+				overflow: hidden;
+				border: 3px solid rgba(0, 240, 255, 0.3);
+				backdrop-filter: blur(20px);
+				box-shadow:
+					0 30px 60px rgba(0, 240, 255, 0.2),
+					0 0 40px rgba(0, 240, 255, 0.1);
+				transform-style: preserve-3d;
+				animation: slideFloat 6s ease-in-out infinite;
+			}
+
+			@keyframes slideFloat {
+				0%,
+				100% {
+					transform: translateY(0) rotateX(0deg) rotateY(0deg);
+				}
+				25% {
+					transform: translateY(-10px) rotateX(2deg) rotateY(1deg);
+				}
+				50% {
+					transform: translateY(-5px) rotateX(-1deg) rotateY(-1deg);
+				}
+				75% {
+					transform: translateY(-15px) rotateX(1deg) rotateY(2deg);
+				}
+			}
+
+			.slide-image {
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+				transition: all 0.8s ease;
+				transform-style: preserve-3d;
+			}
+
+			.game-slide:hover .slide-image {
+				transform: scale(1.1) rotateY(5deg) rotateX(5deg);
+				filter: brightness(1.2) saturate(1.3) contrast(1.1);
+			}
+
+			.slide-content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+				padding: 2rem;
+				transform: translateZ(20px);
+			}
+
+			.slide-content h3 {
+				font-family: var(--font-primary);
+				font-size: 2.5rem;
+				color: var(--primary);
+				margin-bottom: 0.5rem;
+				text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+				animation: textGlow 3s ease-in-out infinite;
+			}
+
+			@keyframes textGlow {
+				0%,
+				100% {
+					text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+				}
+				50% {
+					text-shadow: 0 0 30px rgba(0, 240, 255, 0.8);
+				}
+			}
+
+			.slide-content p {
+				font-size: 1.2rem;
+				color: var(--light);
+				font-weight: 600;
+				margin-bottom: 1rem;
+			}
+
+			.slide-platforms {
+				display: flex;
+				gap: 0.5rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.platform-badge {
+				padding: 0.3rem 0.8rem;
+				border-radius: 15px;
+				font-size: 0.8rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				transition: all 0.4s ease;
+				transform-style: preserve-3d;
+			}
+
+			.platform-badge.ps5 {
+				background: linear-gradient(135deg, #0070cc, #0050cc);
+				color: white;
+			}
+
+			.platform-badge.ps4 {
+				background: linear-gradient(135deg, #003087, #0050cc);
+				color: white;
+			}
+
+			.platform-badge.pc {
+				background: linear-gradient(135deg, #ff6600, #ff9933);
+				color: white;
+			}
+
+			.game-slide:hover .platform-badge {
+				transform: translateY(-3px) rotateY(5deg) scale(1.1);
+				box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4);
+			}
+
+			.diaporama-controls {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+
+			.control-btn {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background: var(--gradient-neon);
+				border: none;
+				color: var(--dark);
+				font-size: 2rem;
+				font-weight: 900;
+				cursor: pointer;
+				transition: all 0.4s ease;
+				transform-style: preserve-3d;
+				box-shadow: 0 10px 30px rgba(0, 240, 255, 0.3);
+			}
+
+			.control-btn:hover {
+				transform: translateY(-5px) scale(1.1) rotateY(10deg);
+				box-shadow: 0 20px 50px rgba(0, 240, 255, 0.5);
+			}
+
+			.dots-container {
+				display: flex;
+				gap: 1rem;
+			}
+
+			.dot {
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: rgba(0, 240, 255, 0.3);
+				cursor: pointer;
+				transition: all 0.4s ease;
+				transform-style: preserve-3d;
+			}
+
+			.dot.active {
+				background: var(--primary);
+				transform: scale(1.3) translateZ(10px);
+				box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+			}
+
+			.dot:hover {
+				transform: scale(1.2) translateZ(5px);
+				background: var(--accent);
+			}
+
+			/* ============================================
+		   ÉVÉNEMENTS SECTION
+		   ============================================ */
 			.events-section {
 				padding: var(--spacing-xl) 0;
 				position: relative;
@@ -1027,7 +1354,34 @@ const description =
 			.event-card {
 				position: relative;
 				transform-style: preserve-3d;
-				transition: all 0.5s ease;
+				transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				animation: eventCardFloat 8s ease-in-out infinite;
+			}
+
+			.event-card:nth-child(1) {
+				animation-delay: -1s;
+			}
+			.event-card:nth-child(2) {
+				animation-delay: -3s;
+			}
+			.event-card:nth-child(3) {
+				animation-delay: -5s;
+			}
+
+			@keyframes eventCardFloat {
+				0%,
+				100% {
+					transform: translateY(0) rotateY(0deg) rotateX(0deg);
+				}
+				25% {
+					transform: translateY(-8px) rotateY(2deg) rotateX(1deg);
+				}
+				50% {
+					transform: translateY(-5px) rotateY(-1deg) rotateX(-1deg);
+				}
+				75% {
+					transform: translateY(-12px) rotateY(1deg) rotateX(2deg);
+				}
 			}
 
 			.card-3d {
@@ -1044,12 +1398,46 @@ const description =
 				transform-style: preserve-3d;
 			}
 
+			.event-card:hover {
+				animation-play-state: paused;
+				transform: translateY(-25px) rotateY(15deg) rotateX(10deg) scale(1.05);
+			}
+
 			.event-card:hover .card-inner {
-				transform: rotateY(5deg) rotateX(5deg) translateZ(30px);
+				transform: rotateY(10deg) rotateX(8deg) translateZ(50px);
 				border-color: var(--primary);
 				box-shadow:
-					0 30px 60px rgba(0, 240, 255, 0.3),
-					0 0 40px rgba(0, 240, 255, 0.2);
+					0 40px 80px rgba(0, 240, 255, 0.4),
+					0 0 60px rgba(255, 0, 255, 0.3),
+					inset 0 0 30px rgba(0, 240, 255, 0.1);
+			}
+
+			.event-card::before {
+				content: '';
+				position: absolute;
+				top: -50%;
+				left: -50%;
+				width: 200%;
+				height: 200%;
+				background: linear-gradient(45deg, transparent, rgba(0, 240, 255, 0.1), transparent);
+				transform: rotate(45deg);
+				transition: all 0.6s ease;
+				opacity: 0;
+				z-index: 1;
+			}
+
+			.event-card:hover::before {
+				opacity: 1;
+				animation: eventShimmer 1.5s ease-in-out;
+			}
+
+			@keyframes eventShimmer {
+				0% {
+					transform: translateX(-100%) translateY(-100%) rotate(45deg);
+				}
+				100% {
+					transform: translateX(100%) translateY(100%) rotate(45deg);
+				}
 			}
 
 			.event-image-placeholder {
@@ -1074,7 +1462,46 @@ const description =
 			}
 
 			.event-card:hover .event-image {
-				transform: scale(1.05);
+				transform: scale(1.2) rotateY(5deg) rotateX(5deg);
+				filter: brightness(1.3) saturate(1.2) contrast(1.1);
+			}
+
+			.event-image-container {
+				position: relative;
+				overflow: hidden;
+			}
+
+			.event-image-container::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(
+					45deg,
+					rgba(0, 240, 255, 0.2) 0%,
+					transparent 50%,
+					rgba(255, 0, 255, 0.2) 100%
+				);
+				opacity: 0;
+				transition: opacity 0.6s ease;
+				z-index: 1;
+			}
+
+			.event-card:hover .event-image-container::before {
+				opacity: 1;
+				animation: imageGlow 2s ease-in-out infinite;
+			}
+
+			@keyframes imageGlow {
+				0%,
+				100% {
+					opacity: 0.3;
+				}
+				50% {
+					opacity: 0.7;
+				}
 			}
 
 			.event-content {
@@ -1199,9 +1626,41 @@ const description =
 			}
 
 			.feature-card:hover {
-				transform: translateY(-15px) scale(1.05) rotateZ(0deg);
+				animation-play-state: paused;
+				transform: translateY(-25px) rotateY(15deg) rotateX(10deg) scale(1.08);
 				border-color: var(--primary);
-				box-shadow: var(--shadow-lg);
+				box-shadow:
+					0 40px 80px rgba(0, 240, 255, 0.4),
+					0 0 60px rgba(255, 0, 255, 0.3),
+					inset 0 0 30px rgba(0, 240, 255, 0.1);
+			}
+
+			.feature-card::before {
+				content: '';
+				position: absolute;
+				top: -50%;
+				left: -50%;
+				width: 200%;
+				height: 200%;
+				background: linear-gradient(45deg, transparent, rgba(0, 240, 255, 0.1), transparent);
+				transform: rotate(45deg);
+				transition: all 0.6s ease;
+				opacity: 0;
+				z-index: 1;
+			}
+
+			.feature-card:hover::before {
+				opacity: 1;
+				animation: featureShimmer 1.5s ease-in-out;
+			}
+
+			@keyframes featureShimmer {
+				0% {
+					transform: translateX(-100%) translateY(-100%) rotate(45deg);
+				}
+				100% {
+					transform: translateX(100%) translateY(100%) rotate(45deg);
+				}
 			}
 
 			.feature-icon {
@@ -1736,6 +2195,54 @@ const description =
 		</style>
 
 		<script>
+			// 3D Diaporama functionality
+			let currentSlide = 0;
+			const slides = document.querySelectorAll('.game-slide');
+			const dots = document.querySelectorAll('.dot');
+			const track = document.querySelector('.diaporama-track') as HTMLElement;
+			const prevBtn = document.querySelector('.control-btn.prev') as HTMLElement;
+			const nextBtn = document.querySelector('.control-btn.next') as HTMLElement;
+
+			function updateSlide() {
+				// Update track position
+				if (track) {
+					track.style.transform = `translateX(-${currentSlide * 100}%)`;
+				}
+
+				// Update active states
+				slides.forEach((slide, index) => {
+					slide.classList.toggle('active', index === currentSlide);
+				});
+
+				dots.forEach((dot, index) => {
+					dot.classList.toggle('active', index === currentSlide);
+				});
+			}
+
+			function nextSlide() {
+				currentSlide = (currentSlide + 1) % slides.length;
+				updateSlide();
+			}
+
+			function prevSlide() {
+				currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+				updateSlide();
+			}
+
+			// Event listeners
+			nextBtn?.addEventListener('click', nextSlide);
+			prevBtn?.addEventListener('click', prevSlide);
+
+			dots.forEach((dot, index) => {
+				dot.addEventListener('click', () => {
+					currentSlide = index;
+					updateSlide();
+				});
+			});
+
+			// Auto-play diaporama
+			setInterval(nextSlide, 5000);
+
 			// Scroll to top functionality
 			const scrollToTopBtn = document.getElementById('scrollToTop');
 
