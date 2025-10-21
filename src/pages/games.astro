@@ -53,8 +53,19 @@ console.log('Games data:', games);
 		<!-- Hero Section -->
 		<section class="games-hero">
 			<div class="hero-bg">
-				<video class="hero-video" autoplay muted loop playsinline>
-					<source src="/video/streets.mp4" type="video/mp4" />
+				<video
+					class="hero-video"
+					autoplay
+					muted
+					loop
+					playsinline
+					preload="metadata"
+					poster="https://res.cloudinary.com/ddqze3hzg/image/upload/v1761053763/streets_poster.jpg"
+				>
+					<source
+						src="https://res.cloudinary.com/ddqze3hzg/video/upload/v1761053763/streets_mjhye2.mp4"
+						type="video/mp4"
+					/>
 				</video>
 				<div class="video-overlay"></div>
 				<div class="animated-grid"></div>
@@ -341,6 +352,13 @@ console.log('Games data:', games);
 				opacity: 0.5;
 				z-index: 1;
 				filter: brightness(0.8) contrast(1.1) saturate(0.9);
+				/* Responsive video optimizations */
+				max-width: none;
+				max-height: none;
+				/* Better mobile performance */
+				will-change: transform;
+				/* Ensure video covers the entire container */
+				object-position: center center;
 			}
 
 			.video-overlay {
@@ -1018,6 +1036,11 @@ console.log('Games data:', games);
 				.hero-video {
 					opacity: 0.3;
 					filter: brightness(0.7) contrast(1) saturate(0.7);
+					/* Mobile video optimizations */
+					object-fit: cover;
+					object-position: center center;
+					/* Reduce video quality on mobile for better performance */
+					transform: translate(-50%, -50%) scale(1.1);
 				}
 
 				.games-grid {
