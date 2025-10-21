@@ -1,8 +1,8 @@
-# 🎮 Game Street - Guide des Images et Informations
+#  Game Street - Guide des Images et Informations
 
 Bienvenue dans le projet Game Street ! Ce guide vous aidera à ajouter vos propres images et informations personnalisées.
 
-## 📸 Images à Ajouter
+##  Images à Ajouter
 
 ### 1. Hero Section (Section Principale)
 **Emplacement dans le code:** Ligne ~86-92
@@ -85,7 +85,7 @@ Remplacez les divs `.event-image-placeholder`, `.community-image-placeholder`, e
 ```html
 <!-- Au lieu de: -->
 <div class="event-image-placeholder">
-  <span>📸 Image Tournoi</span>
+  <span> Image Tournoi</span>
 </div>
 
 <!-- Utilisez: -->
@@ -197,7 +197,7 @@ npm run preview
 - Compressez vos images avec [TinyPNG](https://tinypng.com)
 - Maintenez les résolutions recommandées pour éviter les problèmes de chargement
 
-## 🎯 Prochaines Étapes
+##  Prochaines Étapes
 
 1. ✅ Ajouter toutes vos images
 2. ✅ Personnaliser les textes et informations
@@ -223,5 +223,5 @@ npm run build
 
 **Besoin d'aide?** N'hésitez pas à consulter la [documentation Astro](https://docs.astro.build)
 
-Bon gaming! 🎮🚀
+Bon gaming! 🚀
 

@@ -21,6 +21,12 @@ const description =
 			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -28,7 +34,6 @@ const description =
 			<div class="nav-container">
 				<a href="/" class="logo">
 					<span class="logo-icon">
-						<!--🎮-->
 						<img src="/images/street.jpg" alt="Logo Game Street" width="48" height="48" />
 					</span>
 					<span class="logo-text">GAME STREET</span>
@@ -37,8 +42,7 @@ const description =
 					<li><a href="/">Accueil</a></li>
 					<li><a href="/games">Jeux</a></li>
 					<li><a href="/tarifs">Tarifs</a></li>
-					<li><a href="/faq">FAQ</a></li>
-					<li><a href="/#contact">Contact</a></li>
+					<!--<li><a href="/#contact">Contact</a></li>-->
 				</ul>
 				<button class="mobile-menu-btn" aria-label="Menu">
 					<span></span>
@@ -71,11 +75,11 @@ const description =
 
 				<div class="hero-buttons">
 					<button class="btn btn-primary">
-						<span>Rejoindre Maintenant</span>
+						<span><a href="/tarifs" style="text-decoration: none;">Rejoindre Maintenant</a></span>
 						<div class="btn-glow"></div>
 					</button>
 					<button class="btn btn-secondary">
-						<span>Découvrir Plus</span>
+						<span><a href="/games" style="text-decoration: none;">Découvrir Plus</a></span>
 					</button>
 				</div>
 
@@ -161,7 +165,7 @@ const description =
 									class="slide-image"
 								/>
 								<div class="slide-content">
-									<h3>🎯 Call of Duty: MW III</h3>
+									<h3> Call of Duty: MW III</h3>
 									<p>Le FPS le plus populaire avec multijoueur et campagne</p>
 									<div class="slide-platforms">
 										<span class="platform-badge ps5">PS5</span>
@@ -216,11 +220,7 @@ const description =
 					<div class="event-card card-3d">
 						<div class="card-inner">
 							<div class="event-image-placeholder">
-								<img
-									src="/images/event-tournament.webp"
-									alt="Tournois Gaming"
-									class="event-image"
-								/>
+								<img src="/images/tournoi.jpg" alt="Tournois Gaming" class="event-image" />
 							</div>
 
 							<div class="event-content">
@@ -267,7 +267,7 @@ const description =
 					<div class="event-card card-3d">
 						<div class="card-inner">
 							<div class="event-image-placeholder">
-								<span>📸 Image VR Gaming</span>
+								<img src="/images/vr.webp" alt="VR Experience" class="event-image" />
 							</div>
 
 							<div class="event-content">
@@ -298,52 +298,68 @@ const description =
 
 				<div class="features-grid">
 					<div class="feature-card floating">
-						<div class="feature-icon">🥽</div>
+						<div class="feature-icon">
+							<i class="fas fa-vr-cardboard"></i>
+						</div>
 						<h3>Réalité Virtuelle</h3>
 						<p>
-							Découvrez l'immersion totale avec nos casques VR dernier cri pour des expériences
-							gaming uniques
+							Plongez dans une immersion totale grâce à nos casques de réalité virtuelle de dernière
+							génération, offrant des expériences de jeu inégalées.
 						</p>
 					</div>
 
 					<div class="feature-card floating">
-						<div class="feature-icon">🎮</div>
-						<h3>PS5 & PS4</h3>
+						<div class="feature-icon">
+							<i class="fas fa-gamepad"></i>
+						</div>
+						<h3>Consoles PlayStation</h3>
 						<p>
-							Jouez sur les dernières consoles PlayStation avec une bibliothèque complète de jeux
-							populaires
+							Profitez des toutes dernières PS5 et PS4, accompagnées d’une vaste bibliothèque de
+							jeux populaires pour tous les styles de joueurs.
 						</p>
 					</div>
 
 					<div class="feature-card floating">
-						<div class="feature-icon">🖥️</div>
+						<div class="feature-icon">
+							<i class="fas fa-desktop"></i>
+						</div>
 						<h3>PC Gaming 2K</h3>
 						<p>
-							PC haute performance équipés d'écrans 2K pour une qualité graphique exceptionnelle
+							Découvrez des performances de pointe avec nos PC gaming équipés d’écrans 2K, offrant
+							une qualité d’affichage exceptionnelle.
 						</p>
 					</div>
 
 					<div class="feature-card floating">
-						<div class="feature-icon">💻</div>
-						<h3>Laptops Gaming</h3>
-						<p>Laptops performants disponibles pour jouer à vos jeux favoris en toute mobilité</p>
-					</div>
-
-					<div class="feature-card floating">
-						<div class="feature-icon">🏆</div>
-						<h3>Tournois</h3>
+						<div class="feature-icon">
+							<i class="fas fa-laptop"></i>
+						</div>
+						<h3>Ordinateurs Portables Gaming</h3>
 						<p>
-							Participez à nos tournois organisés toute la semaine sur différents jeux et
-							plateformes
+							Jouez en toute liberté grâce à nos ordinateurs portables puissants, conçus pour une
+							expérience fluide où que vous soyez.
 						</p>
 					</div>
 
 					<div class="feature-card floating">
-						<div class="feature-icon">🌈</div>
-						<h3>Ouvert à Tous</h3>
+						<div class="feature-icon">
+							<i class="fas fa-trophy"></i>
+						</div>
+						<h3>Tournois Compétitifs</h3>
 						<p>
-							Événement inclusif pendant la Semaine de la Diversité - tous les niveaux sont les
-							bienvenus !
+							Rejoignez nos tournois hebdomadaires sur plusieurs jeux et plateformes, et
+							mesurez-vous à d’autres passionnés.
+						</p>
+					</div>
+
+					<div class="feature-card floating">
+						<div class="feature-icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3>Accessibilité et Inclusion</h3>
+						<p>
+							Un espace ouvert à tous dans le cadre de la Semaine de la Diversité — les joueurs de
+							tous niveaux sont les bienvenus.
 						</p>
 					</div>
 				</div>
@@ -355,7 +371,7 @@ const description =
 			<div class="container">
 				<div class="games-promo-card">
 					<h2 class="games-promo-title">
-						<span class="games-icon">🎮</span>
+						<span class="games-icon"></span>
 						Découvrez Tous Nos Jeux !
 					</h2>
 					<p class="games-promo-text">
@@ -372,7 +388,7 @@ const description =
 		</section>
 
 		<!-- Section Communauté -->
-		<section id="community" class="community-section">
+		<!--<section id="community" class="community-section">
 			<div class="container">
 				<h2 class="section-title">
 					<span class="title-glow">Notre Communauté</span>
@@ -380,10 +396,10 @@ const description =
 
 				<div class="community-grid">
 					<div class="community-card pulse-3d">
-						<!-- TODO: Ajouter image de la communauté 1 -->
-						<!-- Recommandé: Photo de groupe de gamers, 600x400px -->
+						<!- TODO: Ajouter image de la communauté 1 ->
+						<!- Recommandé: Photo de groupe de gamers, 600x400px ->
 						<div class="community-image-placeholder">
-							<span>📸 Photo Communauté 1</span>
+							<span> Photo Communauté 1</span>
 						</div>
 						<div class="community-overlay">
 							<h3>Rencontres Hebdomadaires</h3>
@@ -392,10 +408,10 @@ const description =
 					</div>
 
 					<div class="community-card pulse-3d">
-						<!-- TODO: Ajouter image de la communauté 2 -->
-						<!-- Recommandé: Setup gaming, 600x400px -->
+						<!- TODO: Ajouter image de la communauté 2 ->
+						<!- Recommandé: Setup gaming, 600x400px ->
 						<div class="community-image-placeholder">
-							<span>📸 Photo Communauté 2</span>
+							<span> Photo Communauté 2</span>
 						</div>
 						<div class="community-overlay">
 							<h3>Setups Incroyables</h3>
@@ -404,10 +420,10 @@ const description =
 					</div>
 
 					<div class="community-card pulse-3d">
-						<!-- TODO: Ajouter image de la communauté 3 -->
-						<!-- Recommandé: Événement gaming, 600x400px -->
+						<!- TODO: Ajouter image de la communauté 3 ->
+						<!- Recommandé: Événement gaming, 600x400px ->
 						<div class="community-image-placeholder">
-							<span>📸 Photo Communauté 3</span>
+							<span> Photo Communauté 3</span>
 						</div>
 						<div class="community-overlay">
 							<h3>Événements Épiques</h3>
@@ -416,10 +432,10 @@ const description =
 					</div>
 
 					<div class="community-card pulse-3d">
-						<!-- TODO: Ajouter image de la communauté 4 -->
-						<!-- Recommandé: Streamers/joueurs, 600x400px -->
+						<!- TODO: Ajouter image de la communauté 4 ->
+						<!- Recommandé: Streamers/joueurs, 600x400px ->
 						<div class="community-image-placeholder">
-							<span>📸 Photo Communauté 4</span>
+							<span> Photo Communauté 4</span>
 						</div>
 						<div class="community-overlay">
 							<h3>Streamers Partenaires</h3>
@@ -428,65 +444,65 @@ const description =
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
 		<!-- Gallery Showcase avec effet 3D -->
-		<section class="gallery-section">
+		<!--<section class="gallery-section">
 			<div class="container">
 				<h2 class="section-title">
 					<span class="title-glow">Galerie Épique</span>
 				</h2>
 				<div class="gallery-grid">
-					<!-- TODO: Ajouter 6 images de galerie -->
-					<!-- Recommandé: Images de moments gaming épiques, 800x600px -->
+					<! TODO: Ajouter 6 images de galerie ->
+					<!- Recommandé: Images de moments gaming épiques, 800x600px ->
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 1</span>
+							<span> Image 1</span>
 						</div>
 					</div>
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 2</span>
+							<span> Image 2</span>
 						</div>
 					</div>
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 3</span>
+							<span> Image 3</span>
 						</div>
 					</div>
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 4</span>
+							<span> Image 4</span>
 						</div>
 					</div>
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 5</span>
+							<span> Image 5</span>
 						</div>
 					</div>
 					<div class="gallery-item">
 						<div class="gallery-placeholder">
-							<span>📸 Image 6</span>
+							<span> Image 6</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
 		<!-- Info Section -->
-		<section class="newsletter-section">
+		<!--<section class="newsletter-section">
 			<div class="container">
 				<div class="newsletter-card">
 					<h2>Venez Nous Voir !</h2>
 					<p>Événement gratuit et ouvert à tous pendant la Semaine de la Diversité</p>
 					<div class="event-info">
-						<p><strong>📅 Dates :</strong> 31 Octobre - 7 Novembre 2025</p>
+						<p><strong> Dates :</strong> 31 Octobre - 7 Novembre 2025</p>
 						<p><strong>📍 Lieu :</strong> [Votre emplacement à l'école]</p>
 						<p><strong>⏰ Horaires :</strong> [Vos horaires]</p>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
 		<!-- Footer -->
 		<footer id="contact" class="footer">
@@ -495,12 +511,12 @@ const description =
 					<div class="footer-col">
 						<h3>Game Street</h3>
 						<p>Événement gaming pendant la Semaine de la Diversité à l'école</p>
-						<div class="social-links">
+						<!--<div class="social-links">
 							<a href="#" class="social-icon" title="Instagram">📷</a>
 							<a href="#" class="social-icon" title="Discord">💬</a>
 							<a href="#" class="social-icon" title="TikTok">📱</a>
 							<a href="#" class="social-icon" title="Email">✉️</a>
-						</div>
+						</div>-->
 					</div>
 
 					<div class="footer-col">
@@ -516,14 +532,14 @@ const description =
 					<div class="footer-col">
 						<h4>Infos Pratiques</h4>
 						<ul>
-							<li>📅 31 Oct - 7 Nov 2025</li>
-							<li>🎮 VR, PS5, PS4, PC</li>
-							<li>🏆 Tournois quotidiens</li>
-							<li>🎟️ Entrée gratuite</li>
+							<li>31 Oct - 7 Nov 2025</li>
+							<li>VR, PS5, PS4, PC</li>
+							<li>Tournois quotidiens</li>
+							<!--<li>🎟️ Entrée gratuite</li>-->
 						</ul>
 					</div>
 
-					<div class="footer-col">
+					<!--<div class="footer-col">
 						<h4>Contact</h4>
 						<ul>
 							<li>📧 [votre-email]</li>
@@ -531,7 +547,7 @@ const description =
 							<li>📍 [Votre école]</li>
 							<li>⏰ [Vos horaires]</li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 
 				<div class="footer-bottom">
@@ -2196,7 +2212,7 @@ const description =
 
 		<script>
 			// 3D Diaporama functionality
-			let currentSlide = 0;
+			/*let currentSlide = 0;
 			const slides = document.querySelectorAll('.game-slide');
 			const dots = document.querySelectorAll('.dot');
 			const track = document.querySelector('.diaporama-track') as HTMLElement;
@@ -2241,7 +2257,15 @@ const description =
 			});
 
 			// Auto-play diaporama
-			setInterval(nextSlide, 5000);
+			setInterval(nextSlide, 5000);*/
+
+			// Button event function
+			const buttonEvents = document.querySelectorAll('.btn-event');
+			buttonEvents.forEach((btn) => {
+				btn.addEventListener('click', () => {
+					window.location.href = '/tarifs';
+				});
+			});
 
 			// Scroll to top functionality
 			const scrollToTopBtn = document.getElementById('scrollToTop');

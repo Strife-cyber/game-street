@@ -112,7 +112,7 @@ Ce fichier liste tous les emplacements où vous devez ajouter des images dans le
 **Avant:**
 ```html
 <div class="event-image-placeholder">
-  <span>📸 Image Tournoi</span>
+  <span> Image Tournoi</span>
 </div>
 ```
 
@@ -188,7 +188,7 @@ https://www.pexels.com/search/gaming%20pc/
 https://www.pexels.com/search/gamer/
 ```
 
-## ⚡ Optimisation des Images
+##  Optimisation des Images
 
 ### Avant d'ajouter les images:
 
@@ -221,7 +221,7 @@ Une fois toutes les images ajoutées:
 - [ ] Images optimisées (WebP)
 - [ ] Backup du dossier images
 
-## 🎯 Priorité des Images
+##  Priorité des Images
 
 Si vous n'avez pas le temps d'ajouter toutes les images immédiatement:
 
@@ -251,5 +251,5 @@ Exemple:
 
 **Besoin d'aide?** Consultez **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** pour plus de détails!
 
-Bon courage! 📸🎮
+Bon courage! 
 

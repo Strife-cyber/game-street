@@ -25,14 +25,14 @@ Votre site Game Street est **100% prêt** avec:
 - ✅ Newsletter avec formulaire
 - ✅ Footer complet avec liens sociaux
 
-### ⚡ Fonctionnalités
+###  Fonctionnalités
 - ✅ 100% Responsive (mobile, tablette, desktop)
 - ✅ Aucune dépendance externe (pure CSS/JS)
 - ✅ Performance optimale avec Astro
 - ✅ SEO-ready
 - ✅ Accessible
 
-## 🎯 Prochaines Étapes (3 minutes)
+##  Prochaines Étapes (3 minutes)
 
 ### Étape 1: Voir le résultat (1 min)
 ```bash
@@ -41,7 +41,7 @@ Votre site Game Street est **100% prêt** avec:
 npm run dev
 ```
 
-Ouvrez votre navigateur à `http://localhost:4321` et admirez! 🎮
+Ouvrez votre navigateur à `http://localhost:4321` et admirez! 
 
 ### Étape 2: Ajouter VOS images (5-10 min)
 ```bash
@@ -97,7 +97,7 @@ Dans `src/pages/index.astro`, lignes 352-384:
 ### Ajouter votre logo
 Ligne 25-26, remplacez:
 ```html
-<span class="logo-icon">🎮</span>
+<span class="logo-icon"></span>
 <span class="logo-text">GAME STREET</span>
 ```
 
@@ -107,7 +107,7 @@ Par:
 <span class="logo-text">VOTRE NOM</span>
 ```
 
-## 📸 Où Trouver des Images Gratuites?
+##  Où Trouver des Images Gratuites?
 
 ### Gaming & Esports:
 - [Unsplash Gaming](https://unsplash.com/s/photos/gaming)
@@ -148,7 +148,7 @@ Puis glissez-déposez le dossier `dist/` sur [netlify.com/drop](https://app.netl
 | **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** | Guide détaillé des images |
 | **[README.md](README.md)** | Documentation technique complète |
 
-## 🎮 Animations Incluses
+##  Animations Incluses
 
 Toutes ces animations fonctionnent out-of-the-box:
 
@@ -206,7 +206,7 @@ Oui! Testé mobile (320px), tablette (768px), desktop (1920px+)
 **Q: C'est gratuit pour usage commercial?**
 Oui! Open source, utilisez comme vous voulez
 
-## 🎯 Checklist de Lancement
+##  Checklist de Lancement
 
 - [ ] Voir le site en local (npm run dev)
 - [ ] Ajouter toutes les images
@@ -239,7 +239,7 @@ Votre site est **prêt à être personnalisé** en moins de 15 minutes!
 
 ### Ordre Recommandé:
 1. ✅ Voir le résultat (MAINTENANT!)
-2. 📸 Ajouter images (5-10 min)
+2.  Ajouter images (5-10 min)
 3. ✏️ Modifier textes (5 min)
 4. 🚀 Déployer (5 min)
 
@@ -249,7 +249,7 @@ Votre site est **prêt à être personnalisé** en moins de 15 minutes!
 
 **Questions?** Consultez les autres fichiers markdown ou la [doc Astro](https://docs.astro.build)
 
-**Prêt à dominer le gaming?** 🎮🔥
+**Prêt à dominer le gaming?** 🔥
 
 Bon courage! 🚀
 

@@ -22,7 +22,7 @@
 	{
 		"id": 3,
 		"name": "Call of Duty: Modern Warfare III",
-		"emoji": "🎯",
+		"emoji": "",
 		"image": "https://upload.wikimedia.org/wikipedia/en/f/f6/MWIII_Cover_Art.png",
 		"description": "Le FPS le plus populaire avec multijoueur et campagne",
 		"genre": "FPS • Action",
@@ -33,7 +33,7 @@
 		"id": 4,
 		"name": "Fortnite",
 		"emoji": "🏝️",
-		"image": "https://kevurugames.com/wp-content/uploads/2023/02/fortnite.jpg",
+		"image": "https://th.bing.com/th/id/OIF.aZC08VfHfkxV8NluSQZVxg?o=7&cb=12rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
 		"description": "Battle Royale gratuit avec construction et combat",
 		"genre": "Battle Royale",
 		"players": "1-4 joueurs",
@@ -102,7 +102,7 @@
 	{
 		"id": 11,
 		"name": "Valorant",
-		"emoji": "🎯",
+		"emoji": "",
 		"image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Valorant_cover.jpg",
 		"description": "FPS tactique compétitif 5v5",
 		"genre": "FPS • Tactique",

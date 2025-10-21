@@ -1,4 +1,4 @@
-# 🎮 GAME STREET - COMMENCEZ ICI!
+#  GAME STREET - COMMENCEZ ICI!
 
 ## 🎉 Félicitations!
 
@@ -35,7 +35,7 @@ mkdir public/images
 | Fichier | Quand l'utiliser |
 |---------|------------------|
 | **[QUICK_START.md](QUICK_START.md)** | 🟢 Démarrage rapide (5 min) |
-| **[TODO_IMAGES.md](TODO_IMAGES.md)** | 📸 Liste de toutes les images à ajouter |
+| **[TODO_IMAGES.md](TODO_IMAGES.md)** |  Liste de toutes les images à ajouter |
 | **[CUSTOMIZATION_CHECKLIST.md](CUSTOMIZATION_CHECKLIST.md)** | ✅ Checklist complète étape par étape |
 | **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** | 🎨 Guide détaillé des images + conseils |
 | **[README.md](README.md)** | 📖 Documentation technique complète |
@@ -66,7 +66,7 @@ mkdir public/images
 - Aucune dépendance externe
 - TypeScript sans erreurs
 
-## 🎯 Ordre Recommandé
+##  Ordre Recommandé
 
 **Pour les pressés (15 minutes):**
 1. Voir le site → **QUICK_START.md**
@@ -141,7 +141,7 @@ street/
 └── package.json
 ```
 
-## 🎮 Captures d'Écran Attendues
+##  Captures d'Écran Attendues
 
 Votre site contient:
 - **Hero** - Titre 3D "GAME STREET" avec grille animée
@@ -153,7 +153,7 @@ Votre site contient:
 - **Newsletter** - Formulaire avec gradient
 - **Footer** - Liens complets + réseaux sociaux
 
-## ⚡ Commandes Essentielles
+##  Commandes Essentielles
 
 ```bash
 # Développement
@@ -224,17 +224,17 @@ Oui! Testé sur iPhone, iPad, Desktop
 **Q: Puis-je l'utiliser commercialement?**
 Oui! 100% libre d'utilisation
 
-## 🎯 Checklist Rapide
+##  Checklist Rapide
 
 - [ ] ✅ Site vu en local (npm run dev)
-- [ ] 📸 Images ajoutées (14 total)
+- [ ]  Images ajoutées (14 total)
 - [ ] ✏️ Textes personnalisés
 - [ ] 🔗 Liens sociaux ajoutés
 - [ ] 📱 Testé sur mobile
 - [ ] 🚀 Déployé en production
 - [ ] 🎉 Partagé avec la communauté!
 
-## 🏆 Vous Avez
+##  Vous Avez
 
 Un site web gaming **professionnel** avec:
 - **Design moderne** - Tendance 2025
@@ -287,7 +287,7 @@ Suivez **[TODO_IMAGES.md](TODO_IMAGES.md)**
 
 ---
 
-# 🎮 Bon Gaming!
+#  Bon Gaming!
 
 Votre site Game Street est prêt à impressionner votre communauté!
 
@@ -299,5 +299,5 @@ Votre site Game Street est prêt à impressionner votre communauté!
 
 **Créé avec ❤️ pour la communauté gaming**
 
-_Que la force du RGB soit avec vous!_ ✨🎮🔥
+_Que la force du RGB soit avec vous!_ ✨🔥
 

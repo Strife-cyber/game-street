@@ -1,4 +1,4 @@
-# 🎮 Game Street - Gaming Event & Community Dashboard
+#  Game Street - Gaming Event & Community Dashboard
 
 Un site web moderne et épique pour la communauté gaming **Game Street**, avec des animations 3D spectaculaires et un design futuriste néon.
 
@@ -11,8 +11,8 @@ Un site web moderne et épique pour la communauté gaming **Game Street**, avec 
 - 🎨 **Design Futuriste** - Thème néon gaming avec gradients cyan/magenta
 - 🌟 **Animations 3D** - Effets de profondeur, rotations, et transformations
 - 📱 **Responsive** - Optimisé mobile, tablette et desktop
-- ⚡ **Performance** - Construit avec Astro pour une vitesse maximale
-- 🎯 **Sections Complètes**:
+-  **Performance** - Construit avec Astro pour une vitesse maximale
+-  **Sections Complètes**:
   - Hero section avec grille animée 3D
   - Événements à venir avec cartes 3D
   - Fonctionnalités avec animations de flottement
@@ -32,7 +32,7 @@ npm run dev
 # Ouvrir http://localhost:4321 dans votre navigateur
 ```
 
-## 📸 Ajouter vos Images
+##  Ajouter vos Images
 
 Consultez le fichier **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** pour un guide complet sur:
 - Les images à ajouter (résolutions, formats, emplacements)
@@ -86,7 +86,7 @@ Consultez le fichier **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** pour un guide complet 
 - **JavaScript** - Interactions et scroll animations
 - **Google Fonts** - Orbitron & Exo 2
 
-## 🎯 Personnalisation
+##  Personnalisation
 
 ### Changer les statistiques:
 Éditez les lignes 68-81 dans `src/pages/index.astro`
@@ -95,7 +95,7 @@ Consultez le fichier **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** pour un guide complet 
 Éditez la section "Événements" lignes 95-169
 
 ### Ajouter votre logo:
-Remplacez l'emoji 🎮 ligne 25 par votre logo
+Remplacez l'emoji  ligne 25 par votre logo
 
 ### Changer les couleurs:
 Modifiez les variables CSS lignes 352-384
@@ -123,7 +123,7 @@ Consultez la [documentation Astro](https://docs.astro.build/en/guides/deploy/)
 - **Tablet:** < 768px
 - **Desktop:** > 768px
 
-## 🎮 Animations Incluses
+##  Animations Incluses
 
 - Grille 3D animée avec perspective
 - Particules flottantes
@@ -148,4 +148,4 @@ Besoin d'aide? Consultez:
 
 **Créé avec ❤️ pour la communauté Game Street**
 
-Bon gaming! 🎮🚀
+Bon gaming! 🚀

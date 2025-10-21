@@ -44,14 +44,14 @@ Utilisez cette checklist pour personnaliser votre site Game Street!
   - Fichiers: `public/images/gallery-1.jpg` à `gallery-6.jpg`
   - Lignes: ~293-314
 
-## 🎯 Étape 2: Informations de Base
+##  Étape 2: Informations de Base
 
 ### Métadonnées (Lignes 3-4)
 - [ ] Changer le titre du site
 - [ ] Personnaliser la description
 
 ### Logo & Branding (Ligne 25)
-- [ ] Remplacer emoji 🎮 par votre logo
+- [ ] Remplacer emoji  par votre logo
 - [ ] Personnaliser "GAME STREET" avec votre nom
 
 ### Favicon (public/favicon.svg)
@@ -63,7 +63,7 @@ Utilisez cette checklist pour personnaliser votre site Game Street!
 - [ ] Modifier le nombre d'événements (actuellement: 150+)
 - [ ] Ajuster le support (actuellement: 24/7)
 
-## 📅 Étape 4: Événements (Section Events)
+##  Étape 4: Événements (Section Events)
 
 ### Événement 1 - Tournoi (Lignes ~113-121)
 - [ ] Changer la date (ligne 113)
@@ -83,17 +83,17 @@ Utilisez cette checklist pour personnaliser votre site Game Street!
 - [ ] Personnaliser la description (ligne 159)
 - [ ] Ajuster les tags (lignes 160-163)
 
-## ⭐ Étape 5: Fonctionnalités (Lignes ~179-215)
+##  Étape 5: Fonctionnalités (Lignes ~179-215)
 
 - [ ] Personnaliser les 6 cartes de fonctionnalités
 - [ ] Modifier les icônes (actuellement emojis)
 - [ ] Adapter les textes à votre communauté
 
 **Fonctionnalités actuelles:**
-1. Tournois Compétitifs 🎯
-2. Communauté Active 👥
-3. Récompenses Exclusives 🏆
-4. Équipement Pro 🎮
+1. Tournois Compétitifs 
+2. Communauté Active 
+3. Récompenses Exclusives 
+4. Équipement Pro 
 5. Application Mobile 📱
 6. Coaching Pro 🌟
 
@@ -182,7 +182,7 @@ Menu actuel:
 - [Font Awesome](https://fontawesome.com)
 - [Heroicons](https://heroicons.com)
 
-## ⚡ Optimisations Avancées (Optionnel)
+##  Optimisations Avancées (Optionnel)
 
 - [ ] Convertir images en WebP pour meilleure performance
 - [ ] Ajouter lazy loading sur les images
@@ -218,5 +218,5 @@ Consultez:
 
 ---
 
-**Bonne chance avec votre site Game Street! 🎮✨**
+**Bonne chance avec votre site Game Street! ✨**
 

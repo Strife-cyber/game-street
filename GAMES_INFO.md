@@ -1,4 +1,4 @@
-# 🎮 Guide des Jeux - Game Street
+#  Guide des Jeux - Game Street
 
 ## ✅ Ce qui a été fait
 
@@ -21,7 +21,7 @@ Fichier: `src/pages/games.astro`
 - ✅ Animations 3D au hover
 - ✅ Design matching la page d'accueil
 
-## 🎮 Liste des 24 Jeux Inclus
+##  Liste des 24 Jeux Inclus
 
 ### **Sport**
 1. EA SPORTS FC 24 (PS5, PS4, PC)
@@ -69,7 +69,7 @@ Fichier: `src/pages/games.astro`
 {
   "id": 25,
   "name": "Nom du Jeu",
-  "emoji": "🎮",
+  "emoji": "",
   "image": "https://url-de-l-image.jpg",
   "description": "Description du jeu",
   "genre": "Genre • Sous-genre",
@@ -143,7 +143,7 @@ C'est tout! Le jeu apparaîtra automatiquement sur la page.
 - `filter: brightness(1.1)` pour effet lumineux
 - Transition smooth 0.5s
 
-## 🎯 Filtres Disponibles
+##  Filtres Disponibles
 
 1. **Tous** - Affiche tous les jeux
 2. **PS5** - Jeux PlayStation 5

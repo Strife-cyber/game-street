@@ -30,15 +30,22 @@ console.log('Games data:', games);
 		<nav class="nav">
 			<div class="nav-container">
 				<a href="/" class="logo">
-					<span class="logo-icon">🎮</span>
+					<span class="logo-icon">
+						<img
+							src="/images/street.jpg"
+							alt="Street Logo"
+							class="logo-image"
+							width="60"
+							height="60"
+						/>
+					</span>
 					<span class="logo-text">GAME STREET</span>
 				</a>
 				<ul class="nav-links">
 					<li><a href="/">Accueil</a></li>
 					<li><a href="/games" class="active">Jeux</a></li>
 					<li><a href="/tarifs">Tarifs</a></li>
-					<li><a href="/faq">FAQ</a></li>
-					<li><a href="/#contact">Contact</a></li>
+					<!--<li><a href="/#contact">Contact</a></li>-->
 				</ul>
 			</div>
 		</nav>
@@ -117,7 +124,7 @@ console.log('Games data:', games);
 											</div>
 											<p class="game-genre">{game.genre}</p>
 											<div class="game-players">
-												<span>👥 {game.players}</span>
+												<span> {game.players}</span>
 											</div>
 										</div>
 									</div>
@@ -133,7 +140,7 @@ console.log('Games data:', games);
 		<section class="info-section">
 			<div class="container">
 				<div class="info-card">
-					<h2>🎮 Et bien plus encore !</h2>
+					<h2>Et bien plus encore !</h2>
 					<p>
 						Cette liste n'est qu'un aperçu. Venez découvrir notre collection complète de jeux
 						pendant l'événement !
